@@ -109,11 +109,7 @@
 
 }
 
-.head-size a{
-  height: 6vw;
-  line-height: 6vw;
-  display: inline-block;
-}
+
 
 .title-size{
   font-size: 11vw;
@@ -135,7 +131,7 @@
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
   .cont-size{
     font-size: 20px;
   }
@@ -148,6 +144,12 @@
   .padding_TB{
     padding-top: 12px;
   }
+
+  .header{
+    display: none;
+  }
+
+
 
 }
 
@@ -168,6 +170,12 @@
   .head-size{
     font-size: 30px;
     /* padding-top: 3px; */
+  }
+
+  .head-size a{
+    height: 6vw;
+    line-height: 6vw;
+    display: inline-block;
   }
 
 }
