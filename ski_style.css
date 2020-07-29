@@ -111,8 +111,7 @@ a {
 }
 
 .title-size {
-  font-size: 11vw;
-  text-transform: uppercase;
+  font-size: 12vw;
 }
 
 /* .cont-size {
@@ -181,6 +180,35 @@ a {
   display: none;
 }
 
+.menu{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.option{
+  height: 18vw;
+  line-height: 18vw;
+  text-transform: uppercase;
+}
+
+.menu_title{
+  width: 100vw;
+}
+
+.menu_title div{
+  display: inline-block;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
 
 @media screen and (max-width: 375px) {
 
@@ -200,6 +228,26 @@ a {
     font-family: SuisseIntl-Light;
   }
 
+  .title{
+    height: 18vw;
+    line-height: 18vw;
+
+  }
+
+
+  .head-size{
+    font-size: 12vw;
+  }
+
+
+  .botton{
+    float: right;
+    display: inline-block;
+  }
+
+  .short_title{
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -255,6 +303,13 @@ a {
   }
 
 
+  .menu{
+    display: none;
+  }
+
+  .botton{
+    display: none;
+  }
 
 }
 
@@ -355,8 +410,8 @@ a {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
+
   .cont-size {
     font-size: 2.9vw;
   }
