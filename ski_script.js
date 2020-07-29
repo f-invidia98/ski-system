@@ -1,6 +1,6 @@
-$(function() {
-  $("#nav-placeholder").load("nav.html");
-});
+// $(function() {
+//   $("#nav-placeholder").load("nav.html");
+// });
 
 $(".botton").click(function(){
   if ($(".menu").css("display") == 'block') {
