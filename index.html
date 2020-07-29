@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Ski System</title>
+  <meta name="viewport" content="width=device-width" />
   <link href="ski_style.css" rel="stylesheet" type="text/css">
   <script src="jquery.js" type="text/javascript"></script>
-  <script src="ski_script.js" type="text/javascript"></script>
+
+
 </head>
 
 <body>
@@ -22,24 +24,24 @@
 
     <div class="title font title-size text_center border_bottom">
       <span class="long_title">Laboratorio</span>
-      <span class="short_title">lab.</span>
+      <span class="short_title padding_LR">lab.</span>
       <!-- <div class="menu">
         X
       </div> -->
     </div>
 
     <div class="padding_LR padding_TB font cont-size active-cont border_bottom">
-      <span class="cont_text">
+      <div class="cont_text">
         Il laboratorio nasce nel 1994, da una passione di Paolo, Walter e Roberto. Esperienza, innovazioni tecnologiche e moderne applicazioni ci consentono oggi di offrire al cliente un servizio di elevatissima professionalità permettendogli di
         affrontare in tutta sicurezza, e con il massimo divertimento, la disciplina dello sci alpino.
-      </span>
+      </div>
       <div class="image">
         <img src="assets/laboratorio_foto.png">
       </div>
 
     </div>
     <div class="footer padding_LR">
-      <div class="lang">
+      <div class="lang" id="lang">
         <span class="active-head">it</span> <br>
         <span>en</span>
       </div>
@@ -50,7 +52,13 @@
         ↑
       </div>
     </div>
+
+    <div id="nav-placeholder">
+
+    </div>
+
   </div>
+  <script src="ski_script.js" type="text/javascript"></script>
 </body>
 
 </html>

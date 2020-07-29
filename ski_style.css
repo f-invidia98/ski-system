@@ -4,6 +4,12 @@
   font-weight: 600;
 }
 
+@font-face {
+  font-family: SuisseIntl-Light;
+  src: url(assets/SuisseIntl-Light.otf);
+  font-weight: 200;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -28,7 +34,7 @@ a {
 }
 
 .border_bottom {
-  border-bottom: 3px solid #004f9f;
+  border-bottom: 2.4px solid #004f9f;
 }
 
 .text_center {
@@ -75,7 +81,14 @@ a {
 }
 
 
+.image {
+  width: 100%;
+}
 
+.image img {
+  width: inherit;
+  padding-top: 50px;
+}
 
 
 
@@ -116,57 +129,80 @@ a {
 } */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+  display: block;
+}
+
+
+.cont-size {
+  font-size: 20px;
+}
+
+.padding_LR {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.padding_TB {
+  padding-top: 12px;
+}
+
+.long_title {
+  display: none;
+}
+
+.short_title {
+  display: block;
+}
+
+.head-size {
+  font-size: 30px;
+}
+
+.head-size a {
+  height: 6vw;
+  line-height: 6vw;
+  display: inline-block;
+}
+
+#lang{
+  display: none;
+}
+
+
 @media screen and (max-width: 375px) {
 
   .header {
     display: none;
   }
 
-  .cont-size {
-    font-size: 20px;
+  .text_center{
+    text-align: left;
   }
 
-  .padding_LR {
-    padding-left: 12px;
-    padding-right: 12px;
+  .name{
+    text-align: left;
   }
 
-  .padding_TB {
-    padding-top: 12px;
-  }
-
-  .long_title {
-    display: none;
-  }
-
-  .short_title {
-    display: block;
+  .arrow{
+    font-family: SuisseIntl-Light;
   }
 
 }
 
-@media only screen and (min-width: 375px) {
-
-  .header {
-    width: 100vw;
-    text-align: justify;
-  }
-
-  .header:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
-
-  .head-size {
-    font-size: 30px;
-  }
-
-  .head-size a {
-    height: 6vw;
-    line-height: 6vw;
-    display: inline-block;
-  }
+@media screen and (min-width: 375px) {
 
   .cont-size {
     font-size: 25px;
@@ -182,15 +218,48 @@ a {
   }
 
   .long_title {
-    display: block;
+    display: none;
   }
 
   .short_title {
-    display: none;
+    display: block;
   }
+
+  .header {
+    width: 100vw;
+    text-align: justify;
+    height: 7vw;
+  }
+
+  .header:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  .head-size{
+    font-size: 5vw;
+
+  }
+
+  .head-size a{
+      line-height: 7vw;
+  }
+
+  .text_center{
+    text-align: center;
+  }
+
+  #lang{
+    display: block;
+  }
+
+
+
 }
 
-@media only screen and (min-width: 568px)  {
+@media screen and (min-width: 568px)  {
+
   .cont-size {
     font-size: 30px;
     width: auto;
@@ -212,17 +281,23 @@ a {
   .short_title {
     display: none;
   }
+
+  .head-size{
+    font-size: 4vw;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
   .padding_LR {
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
+
   .cont_text {
-    width: 826px;
+    width: 755px;
+    margin: 0 auto;
   }
 
   .long_title {
@@ -232,19 +307,30 @@ a {
   .short_title {
     display: block;
   }
-}
 
-@media screen and (min-width: 768px) {
   .head-size {
     font-size: 40px;
   }
 }
 
-@media only screen and (min-width: 990px)  {
+@media screen and (min-width: 840px) {
+  .cont_text {
+    width: 826px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 990px)  {
+
   .cont-size {
     font-size: 40px;
     line-height: 55px;
     width: auto;
+  }
+
+  .cont_text {
+    width: auto;
+    margin: 0 0;
   }
 
   .padding_LR {
@@ -269,7 +355,8 @@ a {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
   .cont-size {
     font-size: 2.9vw;
   }
@@ -295,16 +382,4 @@ a {
   .short_title {
     display: none;
   }
-}
-
-
-
-
-.image {
-  width: 100%;
-}
-
-.image img {
-  width: inherit;
-  padding-top: 50px;
 }
