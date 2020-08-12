@@ -18,6 +18,7 @@ localStorage.setItem('language', lang);
 
 
 $(document).ready(function(){
+    getLanguage();
     $('.cont_text').text(language.date);
     });
 
