@@ -4,6 +4,7 @@
 
 
 var language;
+var lang = en;
 function getLanguage() {
 (localStorage.getItem('language') == null) ? setLanguage('en') : false;
 $.ajax({
