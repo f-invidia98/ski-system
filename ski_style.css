@@ -23,9 +23,19 @@ a {
   line-height: 0;
 }
 
+html, body, .main{
+  height: 100%;
+}
+
 
 .main {
   width: 100vw;
+  min-height: calc(100vh - 7vw - 70px - 12vw)
+}
+
+.wrap{
+  min-height: 100%;
+  margin-bottom: -70px;
 }
 
 .font {
@@ -34,7 +44,11 @@ a {
 }
 
 .border_bottom {
-  border-bottom: 2.4px solid #004f9f;
+  border-bottom: 3px solid #004f9f;
+}
+
+.border_top {
+  border-top: 3px solid #004f9f;
 }
 
 .text_center {
@@ -58,6 +72,10 @@ a {
   height: 70px;
   width: 100vw;
   font-size: 20px;
+}
+
+.push{
+  height: 70px;
 }
 
 .footer div {
@@ -299,7 +317,7 @@ a {
   }
 
   #lang{
-    display: block;
+    display: table-cell;
   }
 
 
