@@ -153,9 +153,7 @@ pre{
     font-size: 20px;
 }
 
-.prodotto{
-  text-align: center;
-}
+
 
 .info{
   line-height: 20px;
@@ -185,6 +183,13 @@ pre{
   font-size: 12vw;
 }
 
+.info_text{
+  font-size: 20px;
+  line-height: normal;
+}
+
+
+
 
 /* .cont-size {
   font-size: 20px;
@@ -203,7 +208,9 @@ pre{
 
 
 
-
+.prodotto{
+  text-align: left;
+}
 
 
 
@@ -219,6 +226,14 @@ pre{
 
 
 .cont-size {
+  font-size: 20px;
+}
+
+.filter-size{
+  font-size: 20px;
+}
+
+.prodotto-size{
   font-size: 20px;
 }
 
@@ -283,13 +298,14 @@ pre{
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 375px) and (max-width: 990px) {
+@media screen and (min-width: 0px) and (max-width: 990px) {
 
   .filtri{
     position: relative;
     display: inline-block;
     width: 100%;
-    text-align: center;
+    background-color: #004f9f;
+
   }
 
   .none{
@@ -304,11 +320,15 @@ pre{
   }
 
   .filtri a {
-    height: 7vw;
+    height: 10vw;
     transition: 2s;
-    line-height: 7vw;
+    line-height: 10vw;
     width: 100%;
+    padding-left: 19px;
+    padding-right: 19px;
   }
+
+
 
   .padding_filter{
     padding-left: 0;
@@ -318,6 +338,36 @@ pre{
   .filtri:hover .none{
     display: block;
 
+  }
+
+  .hide{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+  .border_right{
+    border-width: 0px;
+  }
+
+  .padding_special{
+    padding-top: 0px;
+    padding-bottom: 36px;
+  }
+
+  .nomi{
+    font-style: normal;
+    background-color: #004f9f;
+    height: auto;
+    width: 100%;
+    color: white;
+    line-height: 50px;
+  }
+
+  .border{
+    border-bottom: 3px solid #004f9f;
   }
 }
 
@@ -359,12 +409,20 @@ pre{
   .short_title{
     display: inline-block;
   }
+
+  .image img{
+    padding-top: 12px;
+  }
 }
 
 @media screen and (min-width: 375px) {
 
   .cont-size {
     font-size: 25px;
+  }
+
+  .prodotto-size{
+    font-size: 30px;
   }
 
   .padding_LR {
@@ -423,18 +481,33 @@ pre{
     display: none;
   }
 
+  .filtri{
+    text-align: left;
+  }
+
+  .filter-size{
+    font-size: 30px;
+  }
+
+
 }
 
 @media screen and (min-width: 568px)  {
+
+  .prodotto{
+    text-align: center;
+  }
+
+  .filtri{
+    text-align: center;
+  }
 
   .cont-size {
     font-size: 30px;
     width: auto;
   }
 
-  .filter-size{
-    font-size: 30px;
-  }
+
 
   .padding_LR {
     padding-left: 36px;
@@ -457,6 +530,15 @@ pre{
   .head-size{
     font-size: 4vw;
   }
+
+  .info div{
+    display: block;
+    width: 100%;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -464,6 +546,11 @@ pre{
   .padding_LR {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .padding_special{
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .cont_text {
@@ -482,6 +569,49 @@ pre{
   .head-size {
     font-size: 40px;
   }
+
+  .info{
+    text-align: justify;
+    line-height: normal;
+
+  }
+
+  .hide{
+    display: block;
+  }
+
+  .info:after {
+    content: '';
+    /* display: inline-block; */
+    width: 100%;
+  }
+
+  .info div{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+
+  .border{
+    border-width: 0;
+    display: none;
+  }
+
+  .border_right{
+    border-width: 3px;
+  }
+
+  .nomi{
+    font-style: italic;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    color: #004f9f;
+    line-height: normal;
+  }
+
+
+
 }
 
 @media screen and (min-width: 840px) {
@@ -489,6 +619,8 @@ pre{
     width: 826px;
     margin: 0 auto;
   }
+
+
 }
 
 @media screen and (min-width: 990px)  {
@@ -546,6 +678,11 @@ pre{
     padding-bottom: 60px;
   }
 
+  .padding_special {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .head-size {
     /* padding-top: 7px; */
   }
@@ -557,12 +694,18 @@ pre{
   .short_title {
     display: none;
   }
+
+
 }
 
 @media screen and (min-width: 1200px) {
 
   .cont-size {
     font-size: 2.9vw;
+  }
+
+  .prodotto-size{
+    font-size: 30px;
   }
 
   .padding_LR {
@@ -589,4 +732,12 @@ pre{
   .short_title {
     display: none;
   }
+
+  .temp{
+    width: 300px;
+    height: 600px;
+    background-color: black;
+  }
+
+
 }
