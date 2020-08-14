@@ -112,6 +112,28 @@ html, body, .main{
 
 
 
+.filtri {
+  display: table;
+  width: 100%;
+}
+
+.filtri a {
+  display: table-cell;
+  text-align: center;
+  line-height: 70px;
+}
+
+.padding_filter{
+  padding-left: 210px;
+  padding-right: 210px;
+}
+
+.tariffe{
+  text-align: center;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
 
 
 
@@ -131,6 +153,7 @@ html, body, .main{
 .title-size {
   font-size: 12vw;
 }
+
 
 /* .cont-size {
   font-size: 20px;
@@ -441,11 +464,16 @@ html, body, .main{
 
   .padding_TB {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .head-size {
     font-size: 3.66vw;
     /* padding-top: 10px; */
+  }
+
+  .filter-size{
+    font-size: 2.1vw;
   }
 
   .long_title {
