@@ -23,10 +23,20 @@ a {
   line-height: 0;
 }
 
+.cont_text{
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+
 html, body, .main{
   height: 100%;
 }
 
+pre{
+  font-family: inherit;
+  white-space: pre-wrap;
+}
 
 .main {
   width: 100vw;
@@ -49,6 +59,10 @@ html, body, .main{
 
 .border_top {
   border-top: 3px solid #004f9f;
+}
+
+.border_right {
+  border-right: 3px solid #004f9f;
 }
 
 .text_center {
@@ -112,38 +126,51 @@ html, body, .main{
 
 
 
-.filtri {
-  display: table;
-  width: 100%;
+
+
+
+
+.arrow{
+  width: 5%;
+  display: inline-block;
 }
 
-.filtri a {
-  display: table-cell;
-  text-align: center;
-  line-height: 70px;
+.nome{
+  width: 90%;
+  display: inline-block;
 }
 
-.padding_filter{
-  padding-left: 210px;
-  padding-right: 210px;
-}
+
 
 .tariffe{
   text-align: center;
   line-height: 70px;
   text-transform: uppercase;
-  font-size: 20px;
+
+}
+
+.tariffe-size{
+    font-size: 20px;
 }
 
 .prodotto{
   text-align: center;
 }
 
+.info{
+  line-height: 20px;
+}
 
+.link_prodotto{
+  display: table;
+  width: 100%;
+}
 
-
-
-
+.link_prodotto div{
+  display: table-cell;
+  text-align: center;
+  width: 50%;
+}
 
 
 .head-size {
@@ -185,6 +212,7 @@ html, body, .main{
 
 
 
+
 .header {
   display: block;
 }
@@ -201,6 +229,7 @@ html, body, .main{
 
 .padding_TB {
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .long_title {
@@ -254,6 +283,43 @@ html, body, .main{
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 375px) and (max-width: 990px) {
+
+  .filtri{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .none{
+    display: none;
+    background-color: white;
+    border-top: 3px solid #004f9f;
+  }
+
+  .active_filter{
+    background-color: #004f9f;
+    color: white;
+  }
+
+  .filtri a {
+    height: 7vw;
+    transition: 2s;
+    line-height: 7vw;
+    width: 100%;
+  }
+
+  .padding_filter{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filtri:hover .none{
+    display: block;
+
+  }
+}
 
 @media screen and (max-width: 375px) {
 
@@ -308,6 +374,7 @@ html, body, .main{
 
   .padding_TB {
     padding-top: 19px;
+    padding-bottom: 19px;
   }
 
   .long_title {
@@ -365,6 +432,10 @@ html, body, .main{
     width: auto;
   }
 
+  .filter-size{
+    font-size: 30px;
+  }
+
   .padding_LR {
     padding-left: 36px;
     padding-right: 36px;
@@ -372,6 +443,7 @@ html, body, .main{
 
   .padding_TB {
     padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .long_title {
@@ -393,7 +465,6 @@ html, body, .main{
     margin-left: auto;
     margin-right: auto;
   }
-
 
   .cont_text {
     width: 755px;
@@ -422,6 +493,38 @@ html, body, .main{
 
 @media screen and (min-width: 990px)  {
 
+  .filtri {
+    display: table;
+    width: 100%;
+  }
+
+  .none{
+    display: block;
+  }
+
+  .active_filter{
+    background-color: white;
+    color: #004f9f;
+
+  }
+
+  .filtri a {
+    display: table-cell;
+    text-align: center;
+    line-height: 70px;
+  }
+
+  .filter-size{
+    font-size: 2.1vw;
+  }
+
+  .padding_filter{
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+
+
+
   .cont-size {
     font-size: 40px;
     line-height: 55px;
@@ -440,6 +543,7 @@ html, body, .main{
 
   .padding_TB {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .head-size {
@@ -476,9 +580,7 @@ html, body, .main{
     /* padding-top: 10px; */
   }
 
-  .filter-size{
-    font-size: 2.1vw;
-  }
+
 
   .long_title {
     display: block;
