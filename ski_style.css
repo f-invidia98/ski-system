@@ -188,6 +188,10 @@ pre{
   line-height: normal;
 }
 
+.info_size_variant{
+  font-size: 12px;
+}
+
 
 
 
@@ -321,7 +325,7 @@ pre{
 
   .filtri a {
     height: 10vw;
-    transition: 2s;
+    /* transition: 2s; */
     line-height: 10vw;
     width: 100%;
     padding-left: 19px;
@@ -534,6 +538,10 @@ pre{
   .info div{
     display: block;
     width: 100%;
+  }
+
+  .info_size_variant{
+    font-size: 20px;
   }
 
 
