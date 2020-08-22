@@ -392,7 +392,7 @@ pre{
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
   .header {
     display: none;
@@ -436,7 +436,7 @@ pre{
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 414px) {
 
   .cont-size {
     font-size: 25px;
