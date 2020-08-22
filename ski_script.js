@@ -31,6 +31,17 @@ $(".botton").click(function(){
   }
 })
 
+// $("#prova").click(function(){
+//   if ($("#dropdown").hasClass("shorter")) {
+//     $("#dropdown").removeClass("shorter");
+//     $("#dropdown").addClass("longer");
+//   }else if ($("#dropdown").hasClass("longer")) {
+//     $("#dropdown").removeClass("longer");
+//     $("#dropdown").addClass("shorter");
+//   }
+// })
+
+
 $(window).resize(function() {
 if ($(window).width() > 375) {
 

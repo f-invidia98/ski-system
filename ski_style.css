@@ -302,6 +302,23 @@ pre{
   text-transform: uppercase;
 }
 
+/* #dropdown{
+  height: 0px;
+} */
+
+/* .shorter{
+  height: 0px;
+  display: none;
+} */
+
+.longer{
+  height: auto;
+}
+
+/* #prova:active ~ #dropdown{
+  height: 200px;
+} */
+
 @media screen and (min-width: 0px) and (max-width: 990px) {
 
   .filtri{
@@ -543,6 +560,8 @@ pre{
   .info_size_variant{
     font-size: 20px;
   }
+
+
 
 
 
