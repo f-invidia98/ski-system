@@ -43,9 +43,31 @@ $(".botton").click(function(){
 
 
 $(window).resize(function() {
-if ($(window).width() > 375) {
+if ($(window).width() > 414) {
 
     $(".menu").css("display", "none")
 
 }
 })
+
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function menu_function() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.active_filter')) {
+    var dropdowns = document.getElementsByClassName("content_filter");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
