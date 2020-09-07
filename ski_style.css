@@ -335,21 +335,6 @@ pre{
   height: 200px;
 } */
 
-.content_filter{
-  display: none;
- position: absolute;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-
-.content_filter a{
-  display: block;
-  width: 100vw;
-}
-
-.show{
-  display: block;
-}
 
 
 @media screen and (min-width: 0px) and (max-width: 990px) {
@@ -367,6 +352,8 @@ pre{
     background-color: white;
     border-top: 3px solid #004f9f;
   }
+
+
 
   .active_filter{
     background-color: #004f9f;
@@ -407,6 +394,23 @@ pre{
 
   .hide{
     display: none;
+  }
+
+  .content_filter{
+    display: none;
+   position: absolute;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+
+
+  .content_filter a{
+    display: block;
+    width: 100vw;
+  }
+
+  .show{
+    display: block;
   }
 
 
@@ -469,6 +473,15 @@ pre{
   .botton{
     float: right;
     display: inline-block;
+  }
+
+  .menu_button{
+    height: 9vw;
+  }
+
+  .menu_button_2{
+    width: 9vw;
+    vertical-align: sub;
   }
 
   .short_title{
@@ -700,7 +713,7 @@ pre{
 
 @media screen and (min-width: 990px)  {
 
-  .filtri {
+  #dropdown {
     display: table;
     width: 100%;
   }
@@ -709,13 +722,17 @@ pre{
     display: block;
   }
 
+  .none_apart{
+    display: none;
+  }
+
   .active_filter{
     background-color: white;
     color: #004f9f;
 
   }
 
-  .filtri a {
+  #dropdown a {
     display: table-cell;
     text-align: center;
     line-height: 70px;
@@ -770,6 +787,12 @@ pre{
     display: none;
   }
 
+  .content_filter{
+    display: block;
+   position: relative;
+   box-shadow: 0;
+   z-index: 1;
+  }
 
 }
 

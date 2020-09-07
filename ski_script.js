@@ -55,7 +55,10 @@ if ($(window).width() > 414) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function menu_function() {
+  if ($(window).width() < 990) {
   document.getElementById("dropdown").classList.toggle("show");
+}
+
 }
 
 // Close the dropdown if the user clicks outside of it
