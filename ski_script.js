@@ -78,12 +78,19 @@ window.onclick = function(event) {
 
 
 
+$(".menu_button_2").click(function(){
+
+
+  if ($(".menu").css("display") == 'block') {
+    $(".menu").css("display", "none")
+  }
+})
+
+
 $(".menu_button").click(function(){
 
-document.getElementById("menu").classList.toggle("show");
-  // if ($(".menu").css("display") == 'none') {
-  //   $(".menu").css("display", "block")
-  // } else if ($(".menu").css("display") == 'block') {
-  //   $(".menu").css("display", "none")
-  // }
+
+  if ($(".menu").css("display") == 'none') {
+    $(".menu").css("display", "block")
+  }
 })
