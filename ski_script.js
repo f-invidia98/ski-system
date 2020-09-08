@@ -74,3 +74,14 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
+$(".botton").click(function(){
+
+  if ($("#nav-placeholder").css("display") == 'none') {
+    $("#nav-placeholder").css("display", "block")
+  } else if ($("#nav-placeholder").css("display") == 'block') {
+    $("#nav-placeholder").css("display", "none")
+  }
+})
