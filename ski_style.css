@@ -476,11 +476,12 @@ pre{
   }
 
   .menu_button{
-    height: 9vw;
+    height: 8vw;
   }
 
   .menu_button_2{
-    width: 9vw;
+    width: 8vw;
+
     vertical-align: sub;
   }
 
