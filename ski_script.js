@@ -81,16 +81,16 @@ window.onclick = function(event) {
 $(".menu_button_2").click(function(){
 
 
-  if ($(".menu").css("display") == 'block') {
+
     $(".menu").css("display", "none")
-  }
+  
 })
 
 
 $(".menu_button").click(function(){
 
 
-  if ($(".menu").css("display") == 'none') {
+
     $(".menu").css("display", "block")
-  }
+
 })
