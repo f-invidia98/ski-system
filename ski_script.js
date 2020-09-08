@@ -77,7 +77,7 @@ window.onclick = function(event) {
 
 
 
-$(".botton").click(function(){
+$(".menu_button").click(function(){
 
   if ($(".menu").css("display") == 'none') {
     $(".menu").css("display", "block")
