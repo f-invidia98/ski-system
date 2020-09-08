@@ -72,13 +72,13 @@ window.onclick = function(event) {
 }
 
 $(".menu_button").click(function(){
-  if ($(".menu").css("display") == 'none') {
+
     $(".menu").css("display", "block")
-  }
+  
 })
 
 $(".menu_button_2").click(function(){
-  
+
     $(".menu").css("display", "none")
 
 })
