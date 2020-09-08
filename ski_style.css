@@ -556,6 +556,10 @@ pre{
 
 
   .menu{
+    display: block;
+  }
+
+  #nav-placeholder{
     display: none;
   }
 

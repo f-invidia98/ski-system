@@ -80,5 +80,5 @@ window.onclick = function(event) {
 
 $(".menu_button").click(function(){
 
-  document.getElementById(".menu").classList.toggle("show");
+  document.getElementById("nav-placeholder").classList.toggle("show");
 })
