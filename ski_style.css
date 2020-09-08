@@ -556,11 +556,12 @@ pre{
 
 
   .menu{
-    display: block;
+    display: none;
+    z-index: 12;
   }
 
   #nav-placeholder{
-    display: none;
+    display: block;
   }
 
   .botton{
