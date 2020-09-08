@@ -78,7 +78,7 @@ $(".menu_button").click(function(){
 })
 
 $(".menu_button_2").click(function(){
-  if ($(".menu").css("display") == 'block') {
+  
     $(".menu").css("display", "none")
-  }
+
 })
