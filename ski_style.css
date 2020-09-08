@@ -477,6 +477,7 @@ pre{
 
   .menu_button{
     height: 8vw;
+    z-index: 1200;
   }
 
   .menu_button_2{
