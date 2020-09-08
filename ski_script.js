@@ -80,9 +80,5 @@ window.onclick = function(event) {
 
 $(".menu_button").click(function(){
 
-  if ($(".menu").css("display") == 'none') {
-    $(".menu").css("display", "block")
-  } else if ($(".menu").css("display") == 'block') {
-    $(".menu").css("display", "none")
-  }
+  document.getElementById(".menu").classList.toggle("show");
 })
