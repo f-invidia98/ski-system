@@ -82,8 +82,8 @@ $(".menu_button_2").click(function(){
 
 
 
-    $(".menu").css("display", "none")
-  
+    $("#menu").css("display", "none")
+
 })
 
 
@@ -91,6 +91,6 @@ $(".menu_button").click(function(){
 
 
 
-    $(".menu").css("display", "block")
+    $("#menu").css("display", "block")
 
 })
