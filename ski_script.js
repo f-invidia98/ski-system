@@ -1,7 +1,8 @@
-$(function() {
+function loading() {
   $("#nav-placeholder").load("nav.html");
-});
+};
 
+loading();
 
 // var language;
 // var lang = 'en';
