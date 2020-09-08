@@ -29,14 +29,7 @@ $(function() {
 //   }
 // })
 
-$(".menu_button").click(function(){
-  if ($(".menu").css("display") == 'none') {
-    $(".menu").css("display", "block")
-  }
-  if ($(".menu").css("display") == 'block') {
-    $(".menu").css("display", "none")
-  }
-})
+
 
 // $("#prova").click(function(){
 //   if ($("#dropdown").hasClass("shorter")) {
