@@ -78,13 +78,7 @@ window.onclick = function(event) {
 
 
 
-$(".menu_button_2").click(function(){
 
-
-
-    $("#menu").css("display", "none")
-
-})
 
 
 $(".menu_button").click(function(){
