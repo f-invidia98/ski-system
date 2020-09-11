@@ -79,6 +79,16 @@ window.onclick = function(event) {
 
 
 
+var filter_name;
+
+$(".none").click(function(){
+
+  filter_name = this.innerText;
+  $(".sci").css("display","none")
+  $("."+filter_name).css("display","block")
+  $(".active_filter").text(this.innerText + " ↓")
+
+})
 
 
 $(".menu_button").click(function(){
@@ -88,3 +98,53 @@ $(".menu_button").click(function(){
     $("#menu").css("display", "block")
 
 })
+
+var sci_name;
+var prodotto;
+
+$(".navigate").click(function(){
+
+  sci_name = this.innerText;
+  $("#sci_name").text(sci_name);
+  prodotto = $(this).closest(".prodotto");
+  $("#sci_text").text(prodotto.find(".text").text());
+  $("#sci_produttore").text(prodotto.find(".produttore").text());
+  $("#sci_versione").text(prodotto.find(".versione").text());
+  $("#sci_link").text(prodotto.find(".link").text());
+  $("body").css("overflow","hidden")
+  $(".page2").css("left","0")
+
+// setTimeout(
+//   function(){
+//     window.scroll({
+//       top: 0,
+//       left: 0
+//     })
+//   }, 200)
+
+
+
+})
+
+$(".navigate_back").click(function(){
+  $("body").css("overflow","visible")
+  $(".page2").css("left","100vw")
+
+  })
+
+
+
+
+
+
+//     $(document).ready(function () {
+// $(".wrapper_sci").page();
+// $(".wrapper_sci .page .navigate").click(function (ev) {
+//   var page  = $(ev.target).attr("data-page-name");
+//   var trans = $(ev.target).attr("data-page-trans");
+//   if ($(".wrapper_sci").page().fetch(page) === null)
+//       $(".wrapper_sci").page().shake();
+//   else
+//       $(".wrapper_sci").page().transition(page, trans);
+// });
+// });

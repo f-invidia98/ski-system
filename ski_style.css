@@ -23,6 +23,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  white-space: normal;
   /* border: 1px solid black; */
 }
 
@@ -31,12 +32,18 @@ a {
   color: inherit;
   display: inline-block;
   line-height: 0;
+  cursor: pointer;
+
 }
 
 a:hover{
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #004f9f;
+}
+
+.hidden{
+  display: none;
 }
 
 button{
@@ -55,6 +62,14 @@ html, body, .main{
 
 html{
   scroll-behavior: smooth;
+}
+
+table{
+  vertical-align: top;
+}
+
+th{
+  width: 20%;
 }
 
 pre{
@@ -133,7 +148,9 @@ pre{
 
 .arrow {
   text-align: right;
-  font-size: 45px;
+  font-size: 30px;
+  line-height: 63px;
+  vertical-align: top;
 }
 
 
@@ -146,6 +163,22 @@ pre{
   padding-top: 50px;
 }
 
+.page{
+  height: 100%;
+}
+
+
+.page2{
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  background: white;
+  transition: 0.5s;
+  height: 100%;
+  overflow: scroll;
+
+
+}
 
 
 
@@ -162,6 +195,7 @@ pre{
 .nome{
   width: 90%;
   display: inline-block;
+  line-height: 63px;
 }
 
 
@@ -179,20 +213,13 @@ pre{
 
 
 
+
 .info{
   line-height: 20px;
+
 }
 
-.link_prodotto{
-  display: table;
-  width: 100%;
-}
 
-.link_prodotto div{
-  display: table-cell;
-  text-align: center;
-  width: 50%;
-}
 
 
 .head-size {
@@ -477,7 +504,7 @@ pre{
 
   .menu_button{
     height: 8vw;
-    z-index: 1200;
+    /* z-index: 1200; */
   }
 
   .menu_button_2{
@@ -554,11 +581,11 @@ pre{
     display: table-cell;
   }
 
-  
+
 
   .menu{
     display: none;
-    z-index: 12;
+    /* z-index: 12; */
   }
 
   #nav-placeholder{
@@ -631,6 +658,43 @@ pre{
   }
 
 
+  .sci_info {
+    border-bottom: 3px solid #004f9f;
+  }
+
+
+  .sci_info div{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .link_prodotto{
+    display: table;
+    width: 100%;
+
+  }
+
+  .link_prodotto div{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .exeption{
+    border-right: 0;
+  }
+
+  .exeption2{
+    border-right: 3px solid #004f9f;
+  }
+
+  .info{
+    border-bottom: 0;
+
+  }
+
+
 
 
 
@@ -666,11 +730,11 @@ pre{
     font-size: 40px;
   }
 
-  .info{
+  /* .info{
     text-align: justify;
     line-height: normal;
 
-  }
+  } */
 
   .hide{
     display: block;
@@ -748,6 +812,7 @@ pre{
 
   .filter-size{
     font-size: 2.1vw;
+    line-height: 70px;
   }
 
   .padding_filter{
@@ -799,7 +864,40 @@ pre{
     display: block;
    position: relative;
    box-shadow: 0;
-   z-index: 1;
+   /* z-index: 1; */
+  }
+
+  .sci_info{
+    border-bottom: 0;
+  }
+
+  .sci_info div{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border-bottom: 3px solid black;
+  }
+
+  .exeption{
+    border-right: 3px solid black;
+  }
+
+  .exeption2{
+    border-right: 0;
+  }
+
+  .link_prodotto{
+    display: table;
+    width: 100%;
+
+  }
+
+  .link_prodotto div{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+
+    border-bottom: 0;
   }
 
 }

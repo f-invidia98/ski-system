@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width" />
   <link href="ski_style.css" rel="stylesheet" type="text/css">
   <script src="jquery.js" type="text/javascript"></script>
+  <script src="jquery.cookie.js"></script>
 
+  <link href="jquery.page.css" rel="stylesheet">
+  <script src="jquery.page.js"></script>
+  <script src="jquery.loadTemplate.js"></script>
 
 </head>
 
@@ -29,79 +33,238 @@
         <div class="botton"><img src="assets/menu.png" class="menu_button"></div>
       </div>
 
-      <div class="content padding_LR padding_TB border_bottom font cont-size active-cont">
-        <div class="cont_text">
-          Ski System è un noleggio in grado di offrire un’ampia gamma di sci e accessori delle migliori marche per soddisfare le esigenze di ogni sciatore, anche il più esigente e preparato. Un parco sci costantemente rinnovato e mantenuto in
-          condizioni sempre ottimali grazie all’annesso laboratorio.
+      <div class="wrapper_sci">
+        <div>
+          <div class="page" data-jquery-page-name="1">
+
+            <div class="content padding_LR padding_TB border_bottom font cont-size active-cont">
+              <div class="cont_text">
+                Ski System è un noleggio in grado di offrire un’ampia gamma di sci e accessori delle migliori marche per soddisfare le esigenze di ogni sciatore, anche il più esigente e preparato. Un parco sci costantemente rinnovato e mantenuto in
+                condizioni sempre ottimali grazie all’annesso laboratorio.
+              </div>
+            </div>
+
+            <div class="filtri font filter-size border_bottom padding_filter">
+              <div onclick="menu_function()" class="active_filter mobile none_apart" href="#sci">Tutti</div>
+              <div id="dropdown" class="content_filter">
+
+                <a class="none" href="#sci">Tutti</a>
+                <a class="none" href="#sci">Atomic</a>
+                <a class="none" href="#sci">Blizzard</a>
+                <a class="none" href="#sci">Fischer</a>
+                <a class="none" href="#sci">Head</a>
+                <a class="none" href="#sci">Nordica</a>
+                <a class="none" href="#sci">Rossignol</a>
+                <a class="none" href="#sci">Volkl</a>
+              </div>
+            </div>
+
+            <div class="tariffe border_bottom tariffe-size">
+              vedi tariffe 2020/2021 ↧
+            </div>
+
+
+
+
+            <div id="sci">
+
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Atomic">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Atomic Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Rossignol">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Rossignol Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Blizzard">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Blizzard Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+
+
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Fischer">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Fischer Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Head">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Head Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Nordica">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Nordica Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+
+              <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Volkl">
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Volkl Hero Elite ST →</a>
+                <div class="image padding_LR">
+                  <img src="assets/sci_one.png" alt="">
+                </div>
+                <div class="hidden text">ciao</div>
+                <div class="hidden produttore">ciao</div>
+                <div class="hidden versione">ciao</div>
+                <div class="hidden link">ciao</div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="page2" data-jquery-page-name="2">
+
+            <!-- <div id="template-container"></div> -->
+
+            <div class="header font head-size border_bottom">
+              <a href="index.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
+              <a class="active-head" href="noleggio.html"><span>noleggio</span></a>
+              <a href="dolomiti.html"><span>dolomiti</span></a>
+              <a href="contatti.html"><span>contatti</span></a>
+            </div>
+
+            <div class="title font title-size text_center border_bottom padding_LR uppercase">
+              Noleggio
+              <div class="botton"><img src="assets/menu.png" class="menu_button"></div>
+            </div>
+
+
+            <div class="nomi prodotto_titolo font filter-size border_bottom padding_LR">
+              <a class="arrow navigate_back" data-page-name="1" data-page-trans="slide-in-from-left">←</a>
+              <div id="sci_name" class="text_center nome "></div>
+
+            </div>
+
+            <div class="prodotto content font cont-size padding_TB">
+
+              <div class="image padding_filter">
+                <img id="sci_img" src="assets/sci_one.png" alt="">
+              </div>
+
+            </div>
+            <div class="content padding_LR padding_TB font cont-size active-cont border_bottom">
+              <div id="sci_text" data-content="sci_text" class="cont_text">
+                L’ultimissimo HERO ELITE ST Ti, direttamente ispirato a uno sci da slalom da competizione farà felici gli sciatori tecnici amanti delle gare. La rivoluzionaria tecnologia Line Control abbinata a una larghezza di 68 mm in
+                corrispondenza
+                dell’appoggio del piede e a un arco breve rappresentano una garanzia di precisione, potenza e rapidità nel passaggio da spigolo a spigolo. La tecnologia LCT regala allo sci la massima stabilità, consentendo un costante controllo
+                direzionale unico e una scelta ottimale della traiettoria.
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="sci_info">
+
+
+              <div class="info padding_LR padding_TB tariffe-size border_bottom exeption2">
+                <table style="width:100%; text-align: left;">
+                  <tr>
+                    <th>Produttore:</th>
+                    <td id="sci_produttore">Rossignol</th>
+                  </tr>
+                  <tr>
+                    <th>Versione:</th>
+                    <td id="sci_versione">2018 / 2019</td>
+                  </tr>
+                  <th>Link:</th>
+                  <td id="sci_link">https://www.rossignol.com/it/rossignol-hero-elite-st-ti-konect-skis-sci-rahla02-000-2018-2019.html</td>
+                  </tr>
+                </table>
+              </div><div class="link_prodotto tariffe tariffe-size">
+                <div class="exeption border_bottom">
+                  TARIFFE 2020/2021 ↧
+                </div><div class="">
+                  prenota
+                </div>
+              </div>
+
+            </div>
+            <div class="footer padding_LR">
+              <div class="lang" id="lang">
+                <a href="#" class="active-head">it</a> <br>
+                <a href="#">en</a>
+                <!-- <a href="#" class="active-head" onclick="setLanguage('en')">it</a> <br>
+                <a href="#" onclick="setLanguage('fr')">en</a> -->
+              </div>
+              <div class="name">
+                Ski System <br> Cortina
+              </div>
+              <div class="arrow">
+                <a href="#">↑</a>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
         </div>
       </div>
-
-
-      <div class="filtri font filter-size border_bottom padding_filter">
-        <div onclick="menu_function()" class="active_filter mobile none_apart" href="#">Tutti</div>
-        <div id="dropdown" class="content_filter">
-
-        <a class="none" href="#">Tutti</a>
-        <a class="none" href="#">Atomic</a>
-        <a class="none" href="#">Blizzard</a>
-        <a class="none" href="#">Fischer</a>
-        <a class="none" href="#">Head</a>
-        <a class="none" href="#">Nordica</a>
-        <a class="none" href="#">Rossignol</a>
-        <a class="none" href="#">Volkl</a>
-        </div>
-      </div>
-
-      <div class="tariffe border_bottom tariffe-size">
-        vedi tariffe 2020/2021 ↧
-      </div>
-
-
-
-
-
-        <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR">
-          Rossignol Hero Elite ST →
-          <div class="image padding_LR">
-            <img src="assets/sci_one.png" alt="">
-          </div>
-        </div>
-
-        <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR">
-          Rossignol Hero Elite ST →
-          <div class="image padding_LR">
-            <img src="assets/sci_one.png" alt="">
-          </div>
-
-        </div>
-
-        <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR">
-          Rossignol Hero Elite ST →
-          <div class="image padding_LR">
-            <img src="assets/sci_one.png" alt="">
-          </div>
-
-        </div>
-
-        <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR">
-          Rossignol Hero Elite ST →
-          <div class="image padding_LR">
-            <img src="assets/sci_one.png" alt="">
-          </div>
-
-        </div>
-
-        <div class="prodotto content font prodotto-size padding_TB padding_LR">
-          Rossignol Hero Elite ST →
-          <div class="image padding_LR">
-            <img src="assets/sci_one.png" alt="">
-          </div>
-        </div>
-
 
       <div class="push"></div>
     </div>
-    <div class="footer padding_LR border_top">
+    <div class="footer padding_LR">
       <div class="lang" id="lang">
         <a href="#" class="active-head">it</a> <br>
         <a href="#">en</a>
@@ -118,7 +281,7 @@
 
     <div id="nav-placeholder">
 
-      
+
 
     </div>
 
