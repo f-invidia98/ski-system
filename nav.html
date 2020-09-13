@@ -7,16 +7,31 @@
 
   <div class="menu_options title-size">
     <div class="option border_bottom padding_LR">
-      Laboratorio
+      <a href="laboratorio.html">Laboratorio</a>
+    </div>
+    <div id="noleggio" class="option border_bottom padding_LR">
+      <a>Noleggio</a>
+    </div>
+
+<div class="menu_tend inverted">
+  <div id="sci_link-2" class="option border_bottom padding_LR ">
+    Tutti gli sci
+  </div>
+  <div id="prenota_link" class="option border_bottom padding_LR">
+    Prenota
+  </div>
+  <div id="tariffe_link" class="option border_bottom padding_LR">
+    Tariffe
+  </div>
+</div>
+
+
+
+    <div class="option border_bottom padding_LR">
+      <a href="dolomiti.html">Dolomiti</a>
     </div>
     <div class="option border_bottom padding_LR">
-      Noleggio
-    </div>
-    <div class="option border_bottom padding_LR">
-      Dolomiti
-    </div>
-    <div class="option border_bottom padding_LR">
-      Contatti
+      <a href="contatti.html">Contatti</a>
     </div>
     <div class="option border_bottom padding_LR">
       <a href="#">en</a>/<a href="#" class="active-head">it</a>
@@ -32,4 +47,23 @@ $(".menu_button_2").click(function(){
     $("#menu").css("display", "none")
 
 })
+
+
+$('#noleggio').click(function(){
+  $('.menu_tend').toggleClass("height_menu")
+})
+
+
+$('#sci_link-2').click(function(){
+  window.location.href = "noleggio.html";
+})
+
+$('#prenota_link').click(function(){
+window.location.href = "noleggio.html";
+})
+
+$('#tariffe_link').click(function(){
+window.location.href = "noleggio.html";
+})
+
 </script>

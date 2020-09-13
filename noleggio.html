@@ -22,8 +22,8 @@
 
 
       <div class="header font head-size border_bottom">
-        <a href="index.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
-        <a class="active-head" href="noleggio.html"><span>noleggio</span></a>
+        <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
+        <a class="active-head" href="home.html"><span>noleggio</span></a>
         <a href="dolomiti.html"><span>dolomiti</span></a>
         <a href="contatti.html"><span>contatti</span></a>
       </div>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="filtri font filter-size border_bottom padding_filter">
-              <div onclick="menu_function()" class="active_filter mobile none_apart" href="#sci">Tutti</div>
+              <div onclick="menu_function()" class="active_filter mobile none_apart hitbox"><span class="active_filter_text hitbox">Tutti</span><span class="arrow_right_noleggio hitbox"> ↓</span></div>
               <div id="dropdown" class="content_filter">
 
                 <a class="none" href="#sci">Tutti</a>
@@ -70,7 +70,7 @@
 
 
               <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Atomic">
-                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Atomic Hero Elite ST →</a>
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> <span class="sci_name"> Atomic Hero Elite ST </span><span>→</span></a>
                 <div class="image padding_LR">
                   <img src="assets/sci_one.png" alt="">
                 </div>
@@ -82,7 +82,7 @@
 
 
               <div class="prodotto border_bottom content font prodotto-size padding_TB padding_LR sci Tutti Rossignol">
-                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right"> Rossignol Hero Elite ST →</a>
+                <a class="navigate" data-page-name="2" data-page-trans="slide-in-from-right">  <span class="sci_name"> Rossignol Hero Elite ST </span><span>→</span></a>
                 <div class="image padding_LR">
                   <img src="assets/sci_one.png" alt="">
                 </div>
@@ -172,8 +172,8 @@
             <!-- <div id="template-container"></div> -->
 
             <div class="header font head-size border_bottom">
-              <a href="index.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
-              <a class="active-head" href="noleggio.html"><span>noleggio</span></a>
+              <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
+              <a class="active-head" href="home.html"><span>noleggio</span></a>
               <a href="dolomiti.html"><span>dolomiti</span></a>
               <a href="contatti.html"><span>contatti</span></a>
             </div>
@@ -184,16 +184,16 @@
             </div>
 
 
-            <div class="nomi prodotto_titolo font filter-size border_bottom padding_LR">
-              <a class="arrow navigate_back" data-page-name="1" data-page-trans="slide-in-from-left">←</a>
-              <div id="sci_name" class="text_center nome "></div>
+            <div class="nomi_sci prodotto_titolo font filter-size border_bottom padding_LR">
+              <a class="arrow navigate_back arrow_right" data-page-name="1" data-page-trans="slide-in-from-left">←</a>
+              <div  class="text_center_name nome"><span id="sci_name"> X </span> </div>
 
             </div>
 
-            <div class="prodotto content font cont-size padding_TB">
+            <div class="prodotto content font cont-size">
 
-              <div class="image padding_filter">
-                <img id="sci_img" src="assets/sci_one.png" alt="">
+              <div class="image padding_filter padding_LR">
+                <img id="sci_img" src="" alt="">
               </div>
 
             </div>
@@ -205,6 +205,9 @@
                 direzionale unico e una scelta ottimale della traiettoria.
               </div>
             </div>
+
+
+
 
 
 
@@ -229,13 +232,17 @@
                   </tr>
                 </table>
               </div><div class="link_prodotto tariffe tariffe-size">
-                <div class="exeption border_bottom">
+                <div id="tariffe" class="exeption border_bottom">
                   TARIFFE 2020/2021 ↧
                 </div><div class="">
                   prenota
                 </div>
               </div>
 
+            </div>
+
+            <div class="image padding_filter img_rotate">
+              <img id="sci_img_2" src="assets/sci_one.png" alt="">
             </div>
             <div class="footer padding_LR">
               <div class="lang" id="lang">

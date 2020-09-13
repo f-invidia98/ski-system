@@ -7,63 +7,70 @@
   <meta name="viewport" content="width=device-width" />
   <link href="ski_style.css" rel="stylesheet" type="text/css">
   <script src="jquery.js" type="text/javascript"></script>
+  <script src="jquery.smoothState.js" type="text/javascript"></script>
+
 
 
 </head>
 
 <body>
-  <div class="main font">
-
-    <div class="wrap">
-
-
-      <div class="header font head-size border_bottom">
-        <a class="active-head" href="index.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
-        <a href="noleggio.html"><span>noleggio</span></a>
-        <a href="dolomiti.html"><span>dolomiti</span></a>
-        <a href="contatti.html"><span>contatti</span></a>
-      </div>
-
-      <div class="title font title-size text_center border_bottom padding_LR uppercase">
-        <span class="long_title">Laboratorio</span>
-        <span class="short_title">lab.</span>
-        <div class="botton"><img src="assets/menu.png" class="menu_button"></div>
-      </div>
-
-      <div class="content padding_LR padding_TB font cont-size active-cont">
-        <div class="cont_text">
-          Il laboratorio nasce nel 1994, da una passione di Paolo, Walter e Roberto. Esperienza, innovazioni tecnologiche e moderne applicazioni ci consentono oggi di offrire al cliente un servizio di elevatissima professionalità permettendogli di
-          affrontare in tutta sicurezza, e con il massimo divertimento, la disciplina dello sci alpino.
-        </div>
-        <div class="image">
-          <img src="assets/laboratorio_foto.png">
-        </div>
-
-      </div>
-      <div class="push"></div>
-    </div>
-    <div class="footer padding_LR border_top">
-      <div class="lang" id="lang">
-        <a href="#" class="active-head">it</a> <br>
-        <a href="#">en</a>
-        <!-- <a href="#" class="active-head" onclick="setLanguage('en')">it</a> <br>
-        <a href="#" onclick="setLanguage('fr')">en</a> -->
-      </div>
-      <div class="name">
-        Ski System <br> Cortina
-      </div>
-      <div class="arrow">
-      <a href="#">↑</a>
-      </div>
-    </div>
-
-    <div id="nav-placeholder">
-
-
-
-    </div>
+<div style="z-index:100000;" id="main" class="m-scene">
+  <div class="schermata scene_element scene_element--goup">
 
   </div>
+
+
+
+
+
+</div>
+
+<div style="position:absolute;top:0;left:0;z-index:-100000;" class="main font">
+
+  <div class="wrap ">
+
+
+    <div class="header font head-size border_bottom">
+      <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
+      <a href="noleggio.html"><span>noleggio</span></a>
+      <a href="dolomiti.html"><span>dolomiti</span></a>
+      <a href="contatti.html"><span>contatti</span></a>
+    </div>
+
+
+
+    <div class="content padding_LR font cont-size active-cont">
+      <div style="padding-top:30px; padding-bottom:30px;">
+        <img style="width:100%;" src="assets/laboratorio_foto.png">
+      </div>
+
+    </div>
+    <div class="push"></div>
+  </div>
+  <div class="footer padding_LR border_top">
+    <div class="lang" id="lang">
+      <a href="#" class="active-head">it</a> <br>
+      <a href="#">en</a>
+      <!-- <a href="#" class="active-head" onclick="setLanguage('en')">it</a> <br>
+      <a href="#" onclick="setLanguage('fr')">en</a> -->
+    </div>
+    <div class="name">
+      Ski System <br> Cortina
+    </div>
+    <div class="arrow">
+    <a href="#">↑</a>
+    </div>
+  </div>
+
+  <div id="nav-placeholder">
+
+
+
+  </div>
+
+</div>
+
+
   <script src="ski_script.js" type="text/javascript"></script>
 </body>
 

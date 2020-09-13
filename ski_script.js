@@ -4,25 +4,98 @@ function loading() {
 
 loading();
 
-// var language;
-// var lang = 'en';
-// function getLanguage() {
-// (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-// $.ajax({
-// url:  'language/' +  localStorage.getItem('language') + '.json',
-// dataType: 'json', async: false, dataType: 'json',
-// success: function (lang) { language = lang } });
-// }
-//
-// function setLanguage(lang) {
-// localStorage.setItem('language', lang);
-// }
-//
-//
-// $(document).ready(function(){
-//     getLanguage();
-//     $('.cont_text').text(language.date);
-//     });
+$(document).ready(function() {
+  setTimeout(function(){if (window.location.href.indexOf("index.html") > -1) {
+    window.location.href = "home.html";
+  }},500)
+
+  });
+
+  $('#noleggio').click(function(){
+    $('.menu_tend').css("height","54vw");
+  })
+
+
+// $('#lang > a').click(function(){
+//   $('#lang > a').removeClass("active-head")
+//   $(this).addClass("active-head")
+// })
+
+function tariffe(){
+if ($(window).width() < 990) {
+    $("#tariffe").text("TARIFFE")
+} else if ($(window).width() > 990) {
+    $("#tariffe").text("TARIFFE 2020/2021 ↧")
+}
+
+if ($(window).width() >= 568) {
+    $("#sci_img").css("display", "block");
+    $("#sci_img_2").css("display", "none");
+    $(".img_rotate").css("height", "auto");
+} else if ($(window).width() < 568) {
+  $("#sci_img").css("display", "none");
+  $("#sci_img_2").css("display", "block");
+  $(".img_rotate").css("height", $("#sci_img_2").width()+30+"px");
+  $("#sci_img_2").css("padding-top","0")
+}
+}
+
+tariffe();
+
+
+
+
+
+$(window).resize(tariffe)
+
+
+var language;
+var lang = 'it';
+function getLanguage() {
+(localStorage.getItem('language') == null) ? setLanguage('en') : false;
+$.ajax({
+url:  'language/' +  localStorage.getItem('language') + '.json',
+dataType: 'json', async: false, dataType: 'json',
+success: function (lang) { language = lang } });
+
+}
+
+function setLanguage(lang) {
+localStorage.setItem('language', lang);
+if (localStorage.getItem('language') == "it") {
+  $('#lang > a').removeClass("active-head")
+  $('#lang > a:nth-child(1)').addClass("active-head")
+} else if (localStorage.getItem('language') == "en") {
+  $('#lang > a').removeClass("active-head")
+  $('#lang > a:nth-child(3)').addClass("active-head")
+
+}
+}
+
+
+
+$('#lang > a').click(function(){
+  getLanguage();
+
+  $('#lab_text').text(language.laboratoriotext);
+    });
+
+
+
+     $(document).ready(function(){
+     getLanguage();
+     if (localStorage.getItem('language') == "it") {
+       $('#lang > a').removeClass("active-head")
+       $('#lang > a:nth-child(1)').addClass("active-head")
+     } else if (localStorage.getItem('language') == "en") {
+       $('#lang > a').removeClass("active-head")
+       $('#lang > a:nth-child(3)').addClass("active-head")
+     }
+     $('#lab_text').text(language.laboratoriotext);
+     });
+
+
+
 
 // $(".menu_button_2").click(function(){
 //   if ($(".menu").css("display") == 'block') {
@@ -45,11 +118,14 @@ loading();
 
 $(window).resize(function() {
 if ($(window).width() > 414) {
-
     $(".menu").css("display", "none")
-
 }
 })
+
+
+
+
+
 
 
 
@@ -59,13 +135,17 @@ function menu_function() {
   if ($(window).width() < 990) {
   document.getElementById("dropdown").classList.toggle("show");
 }
-
 }
+
+// $(".active_filter_text").click(function(){
+//   menu_function();
+//
+// });
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.active_filter')) {
-    var dropdowns = document.getElementsByClassName("content_filter");
+  if (!event.target.matches('.hitbox')) {
+    var dropdowns = $(".content_filter");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -79,6 +159,7 @@ window.onclick = function(event) {
 
 
 
+
 var filter_name;
 
 $(".none").click(function(){
@@ -86,7 +167,7 @@ $(".none").click(function(){
   filter_name = this.innerText;
   $(".sci").css("display","none")
   $("."+filter_name).css("display","block")
-  $(".active_filter").text(this.innerText + " ↓")
+  $(".active_filter_text").text(this.innerText)
 
 })
 
@@ -104,15 +185,28 @@ var prodotto;
 
 $(".navigate").click(function(){
 
-  sci_name = this.innerText;
+
+  sci_name = $(this).children(".sci_name").text();
+  // sci_name = this.innerText;
   $("#sci_name").text(sci_name);
   prodotto = $(this).closest(".prodotto");
   $("#sci_text").text(prodotto.find(".text").text());
   $("#sci_produttore").text(prodotto.find(".produttore").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
   $("#sci_link").text(prodotto.find(".link").text());
+  $("#sci_img").attr("src", $(".image > img").attr("src"));
+  $("#sci_img_2").attr("src", $(".image > img").attr("src"));
+
+
+
+
   $("body").css("overflow","hidden")
-  $(".page2").css("left","0")
+  setTimeout(function(){$(".page2").css("left","0");tariffe();},10)
+
+  $(".page2").css("display","block")
+
+
+
 
 // setTimeout(
 //   function(){
@@ -128,10 +222,42 @@ $(".navigate").click(function(){
 
 $(".navigate_back").click(function(){
   $("body").css("overflow","visible")
-  $(".page2").css("left","100vw")
+
+  setTimeout(function(){$(".page2").css("display","none")},500)
+$(".page2").css("left","100vw")
+
 
   })
 
+
+  $(function(){
+    'use strict';
+    var $page = $('#main'),
+        options = {
+          debug: true,
+          prefetch: true,
+          cacheLength: 2,
+          onStart: {
+            duration: 500, // Duration of our animation
+            render: function ($container) {
+              // Add your CSS animation reversing class
+              $container.addClass('is-exiting');
+              // Restart your animation
+              smoothState.restartCSSAnimations();
+            }
+          },
+          onReady: {
+            duration: 0,
+            render: function ($container, $newContent) {
+              // Remove your CSS animation reversing class
+              $container.removeClass('is-exiting');
+              // Inject the new content
+              $container.html($newContent);
+            }
+          }
+        },
+        smoothState = $page.smoothState(options).data('smoothState');
+  });
 
 
 
