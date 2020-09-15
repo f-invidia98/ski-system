@@ -67,9 +67,9 @@ var vid = document.getElementById('exampleVideo');
 	};
 
 
-	$(document).ready(function() {
-	  setTimeout(function(){
-	    window.location.href = "home.html";
-	  },7000)
-
-	  });
+	// $(document).ready(function() {
+	//   setTimeout(function(){
+	//     window.location.href = "home.html";
+	//   },7000)
+	//
+	//   });
