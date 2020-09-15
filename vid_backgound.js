@@ -80,9 +80,13 @@ var vid = document.getElementById('exampleVideo');
 	};
 
 
-	$(document).ready(function() {
-	  setTimeout(function(){
-	    window.location.href = "home.html";
-	  },7000)
 
-	  });
+  document.getElementById('exampleVideo').addEventListener('ended',myHandler,false);
+     function myHandler(e) {
+       $(".scene_element").css("top","-100vh")
+       setTimeout(function(){
+   	    window.location.href = "home.html";
+   	  },1000)
+     }
+
+	

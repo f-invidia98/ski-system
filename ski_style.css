@@ -30,8 +30,12 @@
 
 
   .m-scene .scene_element {
-    animation: 6s;
+    transition: 2s;
     animation-fill-mode: both;
+    position: absolute;
+    top: 0;
+
+    /* transform: translate(0, 0); */
   }
 
   .m-scene .scene_element--goup {
@@ -60,8 +64,8 @@
 
   100% {
 
-    transform: translate(0, -100vh);
-    /* transform: none; */
+    /* transform: translate(0, -100vh); */
+    transform: none;
   }
 }
 

@@ -5,7 +5,10 @@ function loading() {
 loading();
 
 
-
+document.getElementById('exampleVideo').addEventListener('ended',myHandler,false);
+   function myHandler(e) {
+     $(".scene_element").css("top","-100vh")
+   }
 
 
 
@@ -81,7 +84,7 @@ $('#lang > a').click(function(){
 
 
      $(document).ready(function(){
-       $().SmoothAnchors();
+
      getLanguage();
      if (localStorage.getItem('language') == "it") {
        $('#lang > a').removeClass("active-head")
