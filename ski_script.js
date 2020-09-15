@@ -7,7 +7,7 @@ loading();
 $(document).ready(function() {
   setTimeout(function(){if (window.location.href.indexOf("index.html") > -1) {
     window.location.href = "home.html";
-  }},500)
+  }},6000)
 
   });
 
@@ -78,6 +78,9 @@ $('#lang > a').click(function(){
   getLanguage();
 
   $('#lab_text').text(language.laboratoriotext);
+  $('#noleggio_text').text(language.noleggio_text);
+  $('#tutti_text').text(language.tutti_text);
+  $('.noleggio_titolo').text(language.noleggio_titolo);
     });
 
 

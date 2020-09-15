@@ -14,16 +14,65 @@
 </head>
 
 <body>
-<div style="z-index:100000;" id="main" class="m-scene">
-  <div class="schermata scene_element scene_element--goup">
 
+
+
+
+
+
+
+<style>
+
+body{
+
+}
+
+
+#wrapper {
+width: 100vw;
+height: 100vh;
+left: 0;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
+background-color: #004f9f;
+}
+
+video {
+width: 40vw;
+position: relative;
+}
+
+#exampleVideo{
+  position: absolute;
+  opacity: 0;
+}
+
+canvas {
+position: relative;
+}
+</style>
+
+
+
+<div style="z-index:100000;" id="main" class="m-scene">
+  <!-- <div class="schermata scene_element scene_element--goup">
+
+  </div> -->
+  <div id="wrapper" class="schermata scene_element scene_element--goup">
+  <canvas  id="exampleCanvas"></canvas>
+  <video autoplay muted playsinline id="exampleVideo" src="animazione_skisystem.mp4"></video>
   </div>
 
-
-
-
-
 </div>
+
+
+
+
+    <script src="vid_backgound.js" type="text/javascript"></script>
 
 <div style="position:absolute;top:0;left:0;z-index:-100000;" class="main font">
 
@@ -51,8 +100,6 @@
     <div class="lang" id="lang">
       <a href="#" class="active-head">it</a> <br>
       <a href="#">en</a>
-      <!-- <a href="#" class="active-head" onclick="setLanguage('en')">it</a> <br>
-      <a href="#" onclick="setLanguage('fr')">en</a> -->
     </div>
     <div class="name">
       Ski System <br> Cortina
