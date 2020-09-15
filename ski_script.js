@@ -5,6 +5,8 @@ function loading() {
 loading();
 
 
+const videoPromise = document.querySelector('exampleVideo').play();
+
 
 
 
@@ -79,6 +81,7 @@ $('#lang > a').click(function(){
 
 
      $(document).ready(function(){
+       $().SmoothAnchors();
      getLanguage();
      if (localStorage.getItem('language') == "it") {
        $('#lang > a').removeClass("active-head")
@@ -130,6 +133,12 @@ toggle between hiding and showing the dropdown content */
 function menu_function() {
   if ($(window).width() < 990) {
   document.getElementById("dropdown").classList.toggle("show");
+  if (document.getElementById("dropdown").classList.contains('show')) {
+    $(".arrow_right_noleggio").text("↑")
+  }else{
+    $(".arrow_right_noleggio").text("↓")
+  }
+
 }
 }
 
