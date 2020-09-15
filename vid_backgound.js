@@ -16,7 +16,7 @@ var vid = document.getElementById('exampleVideo');
 	var canvas = document.getElementById('exampleCanvas');
 	var ctx = canvas.getContext('2d');
 
-	var ratio = window.devicePixelRatio || 1;
+	var ratio = window.devicePixelRatio || 4;
 	var vidWidth;
 	var vidHeight;
 
