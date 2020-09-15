@@ -5,10 +5,7 @@ function loading() {
 loading();
 
 
-document.getElementById('exampleVideo').addEventListener('ended',myHandler,false);
-   function myHandler(e) {
-     $(".scene_element").css("top","-100vh")
-   }
+
 
 
 

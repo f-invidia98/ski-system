@@ -23,6 +23,7 @@
 .schermata {
   width: 100vw;
   height: 100vh;
+
   background-color: #004f9f;
 }
 
@@ -32,7 +33,7 @@
   .m-scene .scene_element {
     transition: 2s;
     animation-fill-mode: both;
-    position: absolute;
+    position: fixed;
     top: 0;
 
     /* transform: translate(0, 0); */
