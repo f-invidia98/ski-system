@@ -27,8 +27,8 @@ var vid = document.getElementById('exampleVideo');
 		canvas.width = vid.offsetWidth * ratio;
 	canvas.height = vid.offsetHeight * ratio;
 
-	canvas.style.width = vid.offsetWidth + "px";
-	canvas.style.height = vid.offsetHeight + "px";
+	canvas.style.width = vid.offsetWidth*2 + "px";
+	canvas.style.height = vid.offsetHeight*2 + "px";
 
 
 
