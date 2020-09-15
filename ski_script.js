@@ -5,7 +5,7 @@ function loading() {
 loading();
 
 
-const videoPromise = document.querySelector('exampleVideo').play();
+
 
 
 
