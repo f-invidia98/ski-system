@@ -28,10 +28,10 @@ var vid = document.getElementById('exampleVideo');
 	canvas.height = vid.offsetHeight * ratio * 10;
 
 	// canvas.style.width = vid.offsetWidth*3 + "px";
-	// canvas.style.height = vid.offsetHeight*3 + "px";
+	canvas.style.height = vid.offsetHeight*2 + "px";
 
-	canvas.style.width =  "100vw";
-	canvas.style.height = "100vh";
+	canvas.style.width =  "70vw";
+	// canvas.style.height = "100vh";
 
 
 
