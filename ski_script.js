@@ -4,12 +4,7 @@ function loading() {
 
 loading();
 
-$(document).ready(function() {
-  setTimeout(function(){if (window.location.href.indexOf("index.html") > -1) {
-    window.location.href = "home.html";
-  }},6000)
 
-  });
 
   $('#noleggio').click(function(){
     $('.menu_tend').css("height","54vw");
