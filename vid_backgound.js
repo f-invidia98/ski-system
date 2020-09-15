@@ -16,7 +16,7 @@ var vid = document.getElementById('exampleVideo');
 	var canvas = document.getElementById('exampleCanvas');
 	var ctx = canvas.getContext('2d');
 
-	var ratio = window.devicePixelRatio || 4;
+	var ratio = window.devicePixelRatio || 1;
 	var vidWidth;
 	var vidHeight;
 
@@ -24,11 +24,14 @@ var vid = document.getElementById('exampleVideo');
 		vidWidth = vid.videoWidth;
 		vidHeight = vid.videoHeight;
 
-		canvas.width = vid.offsetWidth * ratio;
-	canvas.height = vid.offsetHeight * ratio;
+		canvas.width = vid.offsetWidth * ratio * 10;
+	canvas.height = vid.offsetHeight * ratio * 10;
 
-	canvas.style.width = vid.offsetWidth*2 + "px";
-	canvas.style.height = vid.offsetHeight*2 + "px";
+	// canvas.style.width = vid.offsetWidth*3 + "px";
+	// canvas.style.height = vid.offsetHeight*3 + "px";
+
+	canvas.style.width =  "100vw";
+	canvas.style.height = "100vh";
 
 
 
@@ -77,9 +80,9 @@ var vid = document.getElementById('exampleVideo');
 	};
 
 
-	// $(document).ready(function() {
-	//   setTimeout(function(){
-	//     window.location.href = "home.html";
-	//   },7000)
-	//
-	//   });
+	$(document).ready(function() {
+	  setTimeout(function(){
+	    window.location.href = "home.html";
+	  },7000)
+
+	  });
