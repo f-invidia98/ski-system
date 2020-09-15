@@ -6,9 +6,7 @@ loading();
 
 
 
-  $('#noleggio').click(function(){
-    $('.menu_tend').css("height","54vw");
-  })
+
 
 
 // $('#lang > a').click(function(){
@@ -76,7 +74,7 @@ $('#lang > a').click(function(){
   $('#noleggio_text').text(language.noleggio_text);
   $('#tutti_text').text(language.tutti_text);
   $('.noleggio_titolo').text(language.noleggio_titolo);
-    });
+});
 
 
 
@@ -171,10 +169,17 @@ $(".none").click(function(){
 
 
 $(".menu_button").click(function(){
-
-
-
+if ($("#menu").css("display")=="none") {
     $("#menu").css("display", "block")
+    $(".menu_button").addClass("rotate")
+} else if ($("#menu").css("display")=="block") {
+    $("#menu").css("display", "none")
+    $(".menu_button").removeClass("rotate")
+
+}
+
+
+
 
 })
 

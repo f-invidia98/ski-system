@@ -21,107 +21,104 @@
 
 
 
-<style>
-
-body{
-
-}
+  <style>
+    body {}
 
 
-#wrapper {
-width: 100vw;
-height: 100vh;
-height: calc(var(--vh, 1vh) * 100);
-left: 0;
-top: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0;
-padding: 0;
-background-color: #004f9f;
-}
+    #wrapper {
+      width: 100vw;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      background-color: #004f9f;
+    }
 
-video {
-width: 40vw;
-position: relative;
-}
+    video {
+      width: 40vw;
+      position: relative;
+    }
 
-#exampleVideo{
-  position: absolute;
-  opacity: 0;
-}
+    #exampleVideo {
+      position: absolute;
+      opacity: 0;
+    }
 
-canvas {
-position: relative;
-}
-</style>
+    canvas {
+      position: relative;
+    }
+  </style>
 
 
 
-<div style="z-index:100000;" id="main" class="m-scene">
-  <!-- <div class="schermata scene_element scene_element--goup">
+  <div style="z-index:100000;" id="main" class="m-scene">
+    <!-- <div class="schermata scene_element scene_element--goup">
 
   </div> -->
-  <div id="wrapper" class="schermata scene_element scene_element--goup">
-  <canvas  id="exampleCanvas"></canvas>
-  <video autoplay muted playsinline id="exampleVideo" src="animazione_skisystem.mp4"></video>
+    <div id="wrapper" class="schermata scene_element scene_element--goup">
+      <canvas id="exampleCanvas"></canvas>
+      <video autoplay muted playsinline id="exampleVideo" src="animazione_skisystem.mp4"></video>
+    </div>
+
   </div>
 
-</div>
 
 
 
+  <script src="vid_backgound.js" type="text/javascript"></script>
 
-    <script src="vid_backgound.js" type="text/javascript"></script>
+  <div style="position:absolute;top:0;left:0;z-index:-100000;" class="main font">
 
-<div style="position:absolute;top:0;left:0;z-index:-100000;" class="main font">
-
-  <div class="wrap ">
-
-
-    <div class="header font head-size border_bottom">
-      <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
-      <a href="noleggio.html"><span>noleggio</span></a>
-      <a href="dolomiti.html"><span>dolomiti</span></a>
-      <a href="contatti.html"><span>contatti</span></a>
-    </div>
-
-    <div class="title font title-size text_center border_bottom padding_LR noleggio_titolo landing_page">
-      Ski-System
-      <div class="botton"><img src="assets/menu.png" class="menu_button"></div>
-    </div>
+    <div class="wrap ">
 
 
-
-    <div class="content padding_LR font cont-size active-cont">
-      <div style="padding-top:30px; padding-bottom:30px;">
-        <img style="width:100%;" src="assets/laboratorio_foto.png">
+      <div class="header font head-size border_bottom">
+        <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
+        <a href="noleggio.html"><span>noleggio</span></a>
+        <a href="dolomiti.html"><span>dolomiti</span></a>
+        <a href="contatti.html"><span>contatti</span></a>
       </div>
 
+      <div class="title nostroke font title-size text_center border_bottom padding_LR noleggio_titolo landing_page">
+        Ski-System
+        <div class="botton"><img src="assets/menu.png" class="menu_button"></div>
+      </div>
+
+
+
+      <div class="content padding_LR font cont-size active-cont">
+        <div style="padding-top:30px; padding-bottom:30px;">
+          <img style="width:100%;" src="assets/laboratorio_foto.png">
+        </div>
+
+      </div>
+      <div class="push"></div>
     </div>
-    <div class="push"></div>
+    <div class="footer padding_LR border_top">
+      <div class="lang" id="lang">
+        <a href="#" class="active-head">it</a> <br>
+        <a href="#">en</a>
+      </div>
+      <div class="name">
+        Ski System <br> Cortina
+      </div>
+      <div class="arrow">
+        <a href="#">↑</a>
+      </div>
+    </div>
+
+    <div id="nav-placeholder">
+
+
+
+    </div>
+
   </div>
-  <div class="footer padding_LR border_top">
-    <div class="lang" id="lang">
-      <a href="#" class="active-head">it</a> <br>
-      <a href="#">en</a>
-    </div>
-    <div class="name">
-      Ski System <br> Cortina
-    </div>
-    <div class="arrow">
-    <a href="#">↑</a>
-    </div>
-  </div>
-
-  <div id="nav-placeholder">
-
-
-
-  </div>
-
-</div>
 
 
   <script src="ski_script.js" type="text/javascript"></script>

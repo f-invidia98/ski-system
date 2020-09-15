@@ -28,6 +28,7 @@
 
 
 
+
   .m-scene .scene_element {
     animation: 6s;
     animation-fill-mode: both;
@@ -626,7 +627,17 @@ pre {
 
   .menu_button {
     height: 8vw;
+    position: absolute;
+    transform: translate(0%, 50%);
+    right: 5vw;
+    top: 1vw;
+    z-index: 1000;
+    transition: 0.2s;
     /* z-index: 1200; */
+  }
+
+  .rotate{
+    transform: translate(2vw, 50%) rotate(270deg);
   }
 
   .menu_button_2 {
@@ -1060,442 +1071,66 @@ pre {
 
 
 
-
-/* iphone 3 */
-       @media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }}
-
-       /* iphone 4 */
-       @media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-       /* iphone 5 */
-       @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-       /* iphone 6, 6s, 7, 8 */
-       @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-       /* iphone 6+, 6s+, 7+, 8+ */
-       @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-       /* iphone X , XS, 11 Pro */
-       @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-       /* iphone XR, 11 */
-       @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
-
-      /* iphone XS Max, 11 Pro Max */
-       @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) {
-         .landing_page{
-           display: block;
-         }
-
-
-         .header {
-           display: none;
-         }
-
-         .text_center {
-           text-align: left;
-         }
-
-         .name {
-           text-align: left;
-         }
-
-         /* .arrow{
-           font-family: SuisseIntl-Light;
-         } */
-         .title {
-           height: 18vw;
-           line-height: 18vw;
-         }
-
-         .head-size {
-           font-size: 12vw;
-         }
-
-         .botton {
-           float: right;
-           display: inline-block;
-         }
-
-         .menu_button {
-           height: 8vw;
-           /* z-index: 1200; */
-         }
-
-         .menu_button_2 {
-           width: 8vw;
-           vertical-align: sub;
-         }
-
-         .short_title {
-           display: inline-block;
-         }
-
-         .image img {
-           padding-top: 12px;
-         }
-        }
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  #lang {
+    display: none;
+  }
+
+  .landing_page{
+    display: block;
+  }
+
+
+  .header {
+    display: none;
+  }
+
+  .text_center {
+    text-align: left;
+  }
+
+  .name {
+    text-align: left;
+  }
+
+  /* .arrow{
+    font-family: SuisseIntl-Light;
+  } */
+  .title {
+    height: 18vw;
+    line-height: 18vw;
+  }
+
+  .nostroke{
+    -webkit-text-fill-color: #004f9f;
+    -webkit-text-stroke-width: 0px;
+  }
+
+  .head-size {
+    font-size: 12vw;
+  }
+
+  .botton {
+    float: right;
+    display: inline-block;
+  }
+
+  .menu_button {
+    height: 8vw;
+    /* z-index: 1200; */
+  }
+
+  .menu_button_2 {
+    width: 8vw;
+    vertical-align: sub;
+  }
+
+  .short_title {
+    display: inline-block;
+  }
+
+  .image img {
+    padding-top: 12px;
+  }
+
+}
