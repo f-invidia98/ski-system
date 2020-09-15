@@ -26,7 +26,7 @@ var vid = document.getElementById('exampleVideo');
 
 		setTimeout(() => {
 			setVideoBgColor(vid, wrapper);
-		}, 3000);
+		}, 150);
 	};
 
 	function drawingLoop(){
