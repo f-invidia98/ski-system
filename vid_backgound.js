@@ -10,7 +10,10 @@ window.addEventListener('resize', () => {
 
 var vid = document.getElementById('exampleVideo');
 
-	vid.play();
+
+
+  vid.play();
+
 
 	var wrapper = document.getElementById('wrapper');
 	var canvas = document.getElementById('exampleCanvas');
@@ -24,8 +27,8 @@ var vid = document.getElementById('exampleVideo');
 		vidWidth = vid.videoWidth;
 		vidHeight = vid.videoHeight;
 
-		canvas.width = vid.offsetWidth * ratio * 10;
-	canvas.height = vid.offsetHeight * ratio * 10;
+		canvas.width = vid.offsetWidth * ratio*2;
+	  canvas.height = vid.offsetHeight * ratio*2;
 
 	// canvas.style.width = vid.offsetWidth*3 + "px";
 	canvas.style.height = vid.offsetHeight*2 + "px";
@@ -39,7 +42,8 @@ var vid = document.getElementById('exampleVideo');
 
 		setTimeout(() => {
 			setVideoBgColor(vid, wrapper);
-		}, 200);
+
+		}, 300);
 	};
 
 	function drawingLoop(){
@@ -80,13 +84,9 @@ var vid = document.getElementById('exampleVideo');
 	};
 
 
+	$(document).ready(function() {
+	  setTimeout(function(){
+	    window.location.href = "home.html";
+	  },7000)
 
-  document.getElementById('exampleVideo').addEventListener('ended',myHandler,false);
-     function myHandler(e) {
-       $(".scene_element").css("top","-100vh")
-       setTimeout(function(){
-   	    window.location.href = "home.html";
-   	  },1000)
-     }
-
-	
+	  });

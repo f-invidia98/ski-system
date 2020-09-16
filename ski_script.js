@@ -9,8 +9,6 @@ loading();
 
 
 
-
-
 // $('#lang > a').click(function(){
 //   $('#lang > a').removeClass("active-head")
 //   $(this).addClass("active-head")
@@ -81,7 +79,6 @@ $('#lang > a').click(function(){
 
 
      $(document).ready(function(){
-
      getLanguage();
      if (localStorage.getItem('language') == "it") {
        $('#lang > a').removeClass("active-head")
