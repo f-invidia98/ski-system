@@ -116,7 +116,7 @@ html, body, .main {
   height: 100%;
 }
 
-html {
+html, body, .page2{
   scroll-behavior: smooth;
 }
 
@@ -415,6 +415,13 @@ pre {
 
 #sci_img_2 {
   transform: rotate(90deg);
+}
+
+
+.dolomiti_imglink > div{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
 }
 
 @media screen and (min-width: 0px) and (max-width: 990px) {
