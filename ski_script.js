@@ -170,6 +170,10 @@ $(".none").click(function(){
   $(".sci").css("display","none")
   $("."+filter_name).css("display","block")
   $(".active_filter_text").text(this.innerText)
+  if ($(window).width() > 990) {
+    $(".none").removeClass("inverted")
+    $(this).addClass("inverted")
+  }
 
 })
 
