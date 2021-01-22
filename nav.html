@@ -2,7 +2,7 @@
 <div id="menu" class="menu">
   <div class="menu_title title short_title padding_LR font title-size text_center border_bottom">
     <div>Menu</div>
-    <!-- <div class="botton"><img src="assets/menu_2.png" class="menu_button_2"></div> -->
+    <div class="botton"><img src="assets/menu.png" class="menu_button button_menu"></div>
   </div>
 
   <div class="menu_options title-size">
@@ -41,9 +41,9 @@
 
 <script type="text/javascript">
 
-$(".menu_button_2").click(function(){
-  $("#menu").css("display", "none")
-})
+// $(".menu_button_2").click(function(){
+//   $("#menu").css("display", "none")
+// })
 
 
 $('#noleggio').click(function(){
@@ -61,6 +61,41 @@ $('#prenota_link').click(function(){
 
 $('#tariffe_link').click(function(){
   window.location.href = "noleggio.html";
+})
+
+
+// $(".button_menu").click(function(){
+//   if ($(".menu_button_index").css("display")=="none") {
+//       $(".menu_button_index").css("display", "block")
+//   }
+//
+//
+//     setTimeout(function(){
+//       $(".button_menu").css("display", "none")
+//         $("#menu").css("display", "none")
+//         $(".menu_button").removeClass("rotate")
+//     },10)
+//
+//
+//
+//
+//
+//
+//
+//})
+$(".button_menu").click(function(){
+if ($("#menu").css("display")=="none") {
+    $("#menu").css("display", "block")
+    $(".menu_button").addClass("rotate")
+} else if ($("#menu").css("display")=="block") {
+    $("#menu").css("display", "none")
+    $(".menu_button").removeClass("rotate")
+
+}
+
+
+
+
 })
 
 

@@ -218,6 +218,13 @@ pre {
   padding-top: 50px;
 }
 
+.imagesci {
+  width: inherit;
+  padding-top: 50px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .page {
   height: 100%;
   overflow-x: hidden;
@@ -638,9 +645,17 @@ pre {
     transform: translate(0%, 50%);
     right: 5vw;
     top: 1vw;
-    z-index: 1000;
+    /* z-index: 1000; */
     transition: 0.2s;
     /* z-index: 1200; */
+  }
+
+  .menu_button_index{
+    z-index: 1000;
+  }
+
+  .button_menu{
+
   }
 
   .rotate{

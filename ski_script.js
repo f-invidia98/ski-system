@@ -9,6 +9,8 @@ loading();
 
 
 
+
+
 // $('#lang > a').click(function(){
 //   $('#lang > a').removeClass("active-head")
 //   $(this).addClass("active-head")
@@ -135,7 +137,6 @@ function menu_function() {
   }else{
     $(".arrow_right_noleggio").text("↓")
   }
-
 }
 }
 
@@ -181,10 +182,15 @@ $(".none").click(function(){
 $(".menu_button").click(function(){
 if ($("#menu").css("display")=="none") {
     $("#menu").css("display", "block")
-    $(".menu_button").addClass("rotate")
+    setTimeout(function(){
+      $(".menu_button").addClass("rotate")
+    },10)
+
+
 } else if ($("#menu").css("display")=="block") {
+  $(".menu_button").removeClass("rotate")
     $("#menu").css("display", "none")
-    $(".menu_button").removeClass("rotate")
+
 
 }
 
@@ -192,6 +198,34 @@ if ($("#menu").css("display")=="none") {
 
 
 })
+
+// $(window).scroll(function (event) {
+//     var scroll = $(window).scrollTop();
+//
+//     if (scroll > 0) {
+//       $(".menu_button_index").css("display", "none")
+//
+//     }else if (scroll == 0) {
+//       $(".menu_button_index").css("display", "block")
+//     }
+// });
+
+
+
+// $(".menu_button_index").click(function(){
+// if ($("#menu").css("display")=="none") {
+//     $("#menu").css("display", "block")
+//     $(".menu_button").addClass("rotate")
+//     setTimeout(function(){
+//       $(".menu_button_index").css("display", "none")
+//       $(".button_menu").css("display", "block")
+//     },200)
+// }
+//
+//
+//
+//
+// })
 
 var sci_name;
 var prodotto;
@@ -205,6 +239,7 @@ $(".navigate").click(function(){
   prodotto = $(this).closest(".prodotto");
   $("#sci_text").text(prodotto.find(".text").text());
   $("#sci_produttore").text(prodotto.find(".produttore").text());
+  $("#sci_taglia").text(prodotto.find(".taglia").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
   $("#sci_link").text(prodotto.find(".link").text());
   $("#sci_img").attr("src", $(".image > img").attr("src"));
