@@ -81,6 +81,7 @@
   margin: 0;
   box-sizing: border-box;
   white-space: normal;
+
   /* border: 1px solid black; */
 }
 
@@ -89,7 +90,8 @@ a {
   color: inherit;
   display: inline-block;
   line-height: 0;
-  cursor: pointer;
+  cursor: url('assets/cursor2.png'), auto;
+
 }
 
 a:hover {
@@ -114,6 +116,7 @@ button {
 
 html, body, .main {
   height: 100%;
+  cursor: url('assets/cursor.png'), auto;
 }
 
 html, body, .page2{
@@ -221,8 +224,8 @@ pre {
 .imagesci {
   width: inherit;
   padding-top: 50px;
-  height: 300px;
-  object-fit: cover;
+  /* height: 300px;
+  object-fit: cover; */
 }
 
 .page {
@@ -1053,6 +1056,7 @@ pre {
 @media screen and (min-width: 1200px) {
   .cont-size {
     font-size: 2.9vw;
+    line-height: 4vw;
   }
 
   .prodotto-size {

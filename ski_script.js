@@ -242,8 +242,8 @@ $(".navigate").click(function(){
   $("#sci_taglia").text(prodotto.find(".taglia").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
   $("#sci_link").text(prodotto.find(".link").text());
-  $("#sci_img").attr("src", $(".image > img").attr("src"));
-  $("#sci_img_2").attr("src", $(".image > img").attr("src"));
+  $("#sci_img").attr("src", prodotto.find(".image > img").attr("src"));
+  $("#sci_img_2").attr("src", prodotto.find(".image > img").attr("src"));
 
 
 
