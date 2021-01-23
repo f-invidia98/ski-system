@@ -308,7 +308,29 @@ $(".page2").css("left","100vw")
   });
 
 
+  $(".1").click(function(){
+    $(".lab_image").css("transform", "translate(0vw, 0)")
+    $(".slide_control > a").removeClass("inverted")
+    $(".1").addClass("inverted")
+});
 
+$(".2").click(function(){
+  $(".lab_image").css("transform", "translate(-100vw, 0)")
+  $(".slide_control > a").removeClass("inverted")
+  $(".2").addClass("inverted")
+});
+
+$(".3").click(function(){
+  $(".lab_image").css("transform", "translate(-200vw, 0)")
+  $(".slide_control > a").removeClass("inverted")
+  $(".3").addClass("inverted")
+});
+
+$(".4").click(function(){
+  $(".lab_image").css("transform", "translate(-300vw, 0)")
+  $(".slide_control > a").removeClass("inverted")
+  $(".4").addClass("inverted")
+});
 
 
 //     $(document).ready(function () {
