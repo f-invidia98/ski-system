@@ -930,6 +930,12 @@ pre {
     /* width: 49%; */
   }
 
+  .info_con div {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+
   .border {
     border-width: 0;
     display: none;
