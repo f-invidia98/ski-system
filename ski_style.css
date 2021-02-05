@@ -90,8 +90,14 @@ a {
   color: inherit;
   display: inline-block;
   line-height: 0;
-  cursor: url('assets/cursor2.png'), auto;
+  cursor: url('assets/cursor.png'), auto;
 
+}
+
+.prodotto:hover a{
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #004f9f;
 }
 
 a:hover {
@@ -271,7 +277,7 @@ pre {
 
 .tariffe {
   text-align: center;
-  line-height: 70px;
+  line-height: 90px;
   text-transform: uppercase;
 }
 
@@ -449,7 +455,7 @@ pre {
 
 .dolomiti_imglink > div{
   display: inline-block;
-  width: 50%;
+  /* width: 50%; */
   vertical-align: top;
 }
 
@@ -921,7 +927,7 @@ pre {
   .info div {
     display: inline-block;
     vertical-align: top;
-    width: 49%;
+    /* width: 49%; */
   }
 
   .border {

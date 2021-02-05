@@ -233,7 +233,7 @@ var prodotto;
 $(".navigate").click(function(){
 
 
-  sci_name = $(this).children(".sci_name").text();
+  sci_name = $(this).find(".sci_name").text();
   // sci_name = this.innerText;
   $("#sci_name").text(sci_name);
   prodotto = $(this).closest(".prodotto");
@@ -266,7 +266,21 @@ $(".navigate").click(function(){
 
 
 
-})
+});
+
+
+$(".prodotto").hover(function(){
+  sci_name = $(this).find(".sci_name");
+  prodotto = $(this).closest(".prodotto");
+  prodotto.find(".image > img").css("opacity","0.8")
+  prodotto.find("#sci_img").css("opacity","1")
+  sci_name.addClass("inverted");
+},function(){
+  sci_name = $(this).find(".sci_name");
+  prodotto = $(this).closest(".prodotto");
+  prodotto.find(".image > img").css("opacity","1")
+  sci_name.removeClass("inverted");
+});
 
 $(".navigate_back").click(function(){
   $("body").css("overflow","visible")
