@@ -94,11 +94,11 @@ a {
 
 }
 
-.prodotto:hover a{
+/* .prodotto a:hover{
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #004f9f;
-}
+} */
 
 a:hover {
   -webkit-text-fill-color: white;

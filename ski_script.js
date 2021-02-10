@@ -241,7 +241,8 @@ $(".navigate").click(function(){
   $("#sci_produttore").text(prodotto.find(".produttore").text());
   $("#sci_taglia").text(prodotto.find(".taglia").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
-  $("#sci_link").text(prodotto.find(".link").text());
+  // $("#sci_link").text(prodotto.find(".link").text());
+  $("#sci_link").attr("href", prodotto.find(".link").text());
   $("#sci_img").attr("src", prodotto.find(".image > img").attr("src"));
   $("#sci_img_2").attr("src", prodotto.find(".image > img").attr("src"));
 
@@ -269,14 +270,27 @@ $(".navigate").click(function(){
 });
 
 
-$(".prodotto").hover(function(){
-  sci_name = $(this).find(".sci_name");
+$(".prodotto > .image").hover(function(){
+  sci_name = $(this).closest(".navigate");
   prodotto = $(this).closest(".prodotto");
   prodotto.find(".image > img").css("opacity","0.8")
   prodotto.find("#sci_img").css("opacity","1")
   sci_name.addClass("inverted");
 },function(){
-  sci_name = $(this).find(".sci_name");
+  sci_name = $(this).closest(".navigate");
+  prodotto = $(this).closest(".prodotto");
+  prodotto.find(".image > img").css("opacity","1")
+  sci_name.removeClass("inverted");
+});
+
+$(".prodotto > .navigate").hover(function(){
+  sci_name = $(this).closest(".navigate");
+  prodotto = $(this).closest(".prodotto");
+  prodotto.find(".image > img").css("opacity","0.8")
+  prodotto.find("#sci_img").css("opacity","1")
+  sci_name.addClass("inverted");
+},function(){
+  sci_name = $(this).closest(".navigate");
   prodotto = $(this).closest(".prodotto");
   prodotto.find(".image > img").css("opacity","1")
   sci_name.removeClass("inverted");
