@@ -360,7 +360,7 @@ pre {
   margin-right: -12px;
 }
 
-.padding_TB {
+  .padding_TB {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -1036,8 +1036,8 @@ pre {
   }
 
   .padding_TB {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 80px;
   }
 
   .padding_special {
@@ -1127,8 +1127,8 @@ pre {
   }
 
   .padding_TB {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 80px;
   }
 
   .head-size {
