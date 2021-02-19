@@ -449,6 +449,10 @@ pre {
   transform: translate(0, 40%);
 }
 
+#sci_img{
+  padding-top: 70px;
+}
+
 #sci_img_2 {
   transform: rotate(90deg);
 }
