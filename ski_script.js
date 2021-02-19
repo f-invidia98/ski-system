@@ -5,7 +5,7 @@ function loading() {
 loading();
 
 
-
+$(".title").css( 'cursor', 'url(assets/cursor.png), auto' );
 
 
 
