@@ -273,7 +273,7 @@ $(".navigate").click(function(){
 $(".prodotto > .image").hover(function(){
   sci_name = $(this).closest(".navigate");
   prodotto = $(this).closest(".prodotto");
-  prodotto.find(".image > img").css("opacity","0.8")
+  prodotto.find(".image > img").css("opacity","0.9")
   prodotto.find("#sci_img").css("opacity","1")
   sci_name.addClass("inverted");
 },function(){
@@ -286,7 +286,7 @@ $(".prodotto > .image").hover(function(){
 $(".prodotto > .navigate").hover(function(){
   sci_name = $(this).closest(".navigate");
   prodotto = $(this).closest(".prodotto");
-  prodotto.find(".image > img").css("opacity","0.8")
+  prodotto.find(".image > img").css("opacity","0.9")
   prodotto.find("#sci_img").css("opacity","1")
   sci_name.addClass("inverted");
 },function(){
