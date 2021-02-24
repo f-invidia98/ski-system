@@ -76,6 +76,7 @@ $('#lang > a').click(function(){
   $('#noleggio_text').text(language.noleggio_text);
   $('#tutti_text').text(language.tutti_text);
   $('.noleggio_titolo').text(language.noleggio_titolo);
+  $('#t_noleggio').text(language.t_noleggio);
 });
 
 
@@ -229,8 +230,9 @@ if ($("#menu").css("display")=="none") {
 
 var sci_name;
 var prodotto;
+var count;
 
-$(".navigate").click(function(){
+$(".navigate").click(function scii(){
 
 
   sci_name = $(this).find(".sci_name").text();
@@ -254,6 +256,21 @@ $(".navigate").click(function(){
 
   $(".page2").css("display","block")
 
+for (var i = 0; i < $(".sci_name").length; i++) {
+  if ($(this).find(".sci_name")[0] == $(".sci_name")[i]) {
+    count = i;
+    window.location = "#nrt_sz" + i;
+    // break;
+  }
+}
+
+//
+// $(function() {
+//     if (document.location.href.indexOf('#') < -1) {
+//       location.reload();
+//     }
+// });
+
 
 
 
@@ -268,6 +285,56 @@ $(".navigate").click(function(){
 
 
 });
+
+var nsn;
+var sci_name2;
+var sci_name3;
+
+  nsn = 3;
+
+  // for (var i = 0; i < array.length; i++) {
+  //   array[i]
+  // }
+
+// sci_name = (".sci_name").length;
+
+$(function() {
+  for (var i = 0; i < $(".sci_name").length; i++) {
+    if (document.location.href.indexOf('#nrt_sz' + i) > -1) {
+
+
+      sci_name2 = $(".sci_name")[i];
+
+      sci_name3 = $(sci_name2).html();
+
+  //
+  // sci_name = $(this).find(".sci_name").text();
+  // // sci_name = this.innerText;
+    $("#sci_name").text(sci_name3);
+    prodotto = $(sci_name2).closest(".prodotto");
+  $("#sci_text").text(prodotto.find(".text").text());
+  $("#sci_produttore").text(prodotto.find(".produttore").text());
+  $("#sci_taglia").text(prodotto.find(".taglia").text());
+  $("#sci_versione").text(prodotto.find(".versione").text());
+  // $("#sci_link").text(prodotto.find(".link").text());
+  $("#sci_link").attr("href", prodotto.find(".link").text());
+  $("#sci_img").attr("src", prodotto.find(".image > img").attr("src"));
+  $("#sci_img_2").attr("src", prodotto.find(".image > img").attr("src"));
+
+
+
+
+  $("body").css("overflow","hidden")
+  setTimeout(function(){$(".page2").css("left","0");tariffe();},10)
+
+  $(".page2").css("display","block")
+
+}
+}
+});
+
+
+        $('#elementID').animate({"left": "250"}, "slow");
 
 
 $(".prodotto > .image").hover(function(){
