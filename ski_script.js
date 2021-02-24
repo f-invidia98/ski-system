@@ -60,9 +60,13 @@ localStorage.setItem('language', lang);
 if (localStorage.getItem('language') == "it") {
   $('#lang > a').removeClass("active-head")
   $('#lang > a:nth-child(1)').addClass("active-head")
+  $("text_it").css("display", "block");
+  $("text_en").css("display", "none");
 } else if (localStorage.getItem('language') == "en") {
   $('#lang > a').removeClass("active-head")
   $('#lang > a:nth-child(3)').addClass("active-head")
+  $("text_en").css("display", "block");
+  $("text_it").css("display", "none");
 
 }
 }
@@ -77,6 +81,9 @@ $('#lang > a').click(function(){
   $('#tutti_text').text(language.tutti_text);
   $('.noleggio_titolo').text(language.noleggio_titolo);
   $('#t_noleggio').text(language.t_noleggio);
+  $('#t_contatti').text(language.t_noleggio);
+  $('#t_dolomiti').text(language.t_noleggio);
+
 });
 
 

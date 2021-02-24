@@ -20,9 +20,9 @@
 
       <div class="header font head-size border_bottom">
         <a href="laboratorio.html"><span class="long_title">laboratorio</span> <span class="short_title">lab.</span></a>
-        <a href="noleggio.html"><span>noleggio</span></a>
-        <a href="dolomiti.html"><span>dolomiti</span></a>
-        <a class="active-head" href="home.html"><span>contatti</span></a>
+        <a href="noleggio.html"><span id="t_noleggio">noleggio</span></a>
+        <a href="dolomiti.html"><span id="t_dolomiti">dolomiti</span></a>
+        <a href="contatti.html" class="active-head"><span id="t_contatti">contatti</span></a>
       </div>
 
       <div class="title font title-size text_center border_bottom padding_LR uppercase">
@@ -99,8 +99,8 @@
     </div>
     <div class="footer padding_LR border_top">
       <div class="lang" id="lang">
-        <a href="#" class="active-head">it</a> <br>
-        <a href="#">en</a>
+        <a href="#" onclick="setLanguage('it')" class="active-head">it</a> <br>
+        <a href="#" onclick="setLanguage('en')">en</a>
         <!-- <a href="#" class="active-head" onclick="setLanguage('en')">it</a> <br>
         <a href="#" onclick="setLanguage('fr')">en</a> -->
       </div>

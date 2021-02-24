@@ -2,5 +2,7 @@
     "laboratoriotext": "Date",
     "save": "Save",
     "cancel": "Cancel",
-    "t_noleggio":"rental"
+    "t_noleggio":"rental",
+    "t_dolomiti":"dolomites",
+    "t_contatti":"contacts"
 }
