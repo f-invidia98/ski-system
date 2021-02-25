@@ -60,13 +60,13 @@ localStorage.setItem('language', lang);
 if (localStorage.getItem('language') == "it") {
   $('#lang > a').removeClass("active-head")
   $('#lang > a:nth-child(1)').addClass("active-head")
-  $("text_it").css("display", "block");
-  $("text_en").css("display", "none");
+  $(".text_it").css("display", "block");
+  $(".text_en").css("display", "none");
 } else if (localStorage.getItem('language') == "en") {
   $('#lang > a').removeClass("active-head")
   $('#lang > a:nth-child(3)').addClass("active-head")
-  $("text_en").css("display", "block");
-  $("text_it").css("display", "none");
+  $(".text_en").css("display", "block");
+  $(".text_it").css("display", "none");
 
 }
 }
@@ -93,13 +93,13 @@ $('#lang > a').click(function(){
      if (localStorage.getItem('language') == "it") {
        $('#lang > a').removeClass("active-head")
        $('#lang > a:nth-child(1)').addClass("active-head")
-       $("text_it").css("display", "block");
-       $("text_en").css("display", "none");
+       $(".text_it").css("display", "block");
+       $(".text_en").css("display", "none");
      } else if (localStorage.getItem('language') == "en") {
        $('#lang > a').removeClass("active-head")
        $('#lang > a:nth-child(3)').addClass("active-head")
-       $("text_en").css("display", "block");
-       $("text_it").css("display", "none");
+       $(".text_en").css("display", "block");
+       $(".text_it").css("display", "none");
      }
      $('#lab_text').text(language.laboratoriotext);
      });
