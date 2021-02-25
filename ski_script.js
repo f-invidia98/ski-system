@@ -81,8 +81,8 @@ $('#lang > a').click(function(){
   $('#tutti_text').text(language.tutti_text);
   $('.noleggio_titolo').text(language.noleggio_titolo);
   $('#t_noleggio').text(language.t_noleggio);
-  $('#t_contatti').text(language.t_noleggio);
-  $('#t_dolomiti').text(language.t_noleggio);
+  $('#t_contatti').text(language.t_contatti);
+  $('#t_dolomiti').text(language.t_dolomiti);
   $('#text_paolo').text(language.text_paolo);
   $('#text_walter').text(language.text_walter);
 
