@@ -47,7 +47,7 @@ $(window).resize(tariffe)
 var language;
 var lang = 'it';
 function getLanguage() {
-(localStorage.getItem('language') == null) ? setLanguage('it') : false;
+(localStorage.getItem('language') == null) ? setLanguage('en') : false;
 $.ajax({
 url:  'language/' +  localStorage.getItem('language') + '.json',
 dataType: 'json', async: false, dataType: 'json',
