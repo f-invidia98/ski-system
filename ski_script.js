@@ -7,8 +7,9 @@ loading();
 
 // $(".title").css( 'cursor', 'url(assets/cursor.png), auto' );
 
-
-
+// var posy;
+//   posy = $("#slideshow").offset();
+// $(".arrow_img").css(posy);
 
 
 // $('#lang > a').click(function(){
@@ -82,7 +83,7 @@ if (localStorage.getItem('language') == "it") {
 $('#lang > a').click(function(){
   getLanguage();
 
-  $('#lab_text').text(language.laboratoriotext);
+  $('#lab_text').text(language.text_lab);
   $('#noleggio_text').text(language.noleggio_text);
   $('#tutti_text').text(language.tutti_text);
   $('.noleggio_titolo').text(language.noleggio_titolo);
