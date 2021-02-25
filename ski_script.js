@@ -85,6 +85,8 @@ $('#lang > a').click(function(){
   $('#t_dolomiti').text(language.t_dolomiti);
   $('#text_paolo').text(language.text_paolo);
   $('#text_walter').text(language.text_walter);
+  $('#text_dolomiti').text(language.text_dolomiti);
+  $('#text_dolomiti_cred').text(language.text_dolomiti);
 
 
 });
