@@ -93,9 +93,13 @@ $('#lang > a').click(function(){
      if (localStorage.getItem('language') == "it") {
        $('#lang > a').removeClass("active-head")
        $('#lang > a:nth-child(1)').addClass("active-head")
+       $("text_it").css("display", "block");
+       $("text_en").css("display", "none");
      } else if (localStorage.getItem('language') == "en") {
        $('#lang > a').removeClass("active-head")
        $('#lang > a:nth-child(3)').addClass("active-head")
+       $("text_en").css("display", "block");
+       $("text_it").css("display", "none");
      }
      $('#lab_text').text(language.laboratoriotext);
      });
@@ -246,7 +250,8 @@ $(".navigate").click(function scii(){
   // sci_name = this.innerText;
   $("#sci_name").text(sci_name);
   prodotto = $(this).closest(".prodotto");
-  $("#sci_text").text(prodotto.find(".text").text());
+  $("#sci_text_en").text(prodotto.find(".text_en").text());
+  $("#sci_text_it").text(prodotto.find(".text_it").text());
   $("#sci_produttore").text(prodotto.find(".produttore").text());
   $("#sci_taglia").text(prodotto.find(".taglia").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
