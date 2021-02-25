@@ -319,7 +319,8 @@ $(function() {
   // // sci_name = this.innerText;
     $("#sci_name").text(sci_name3);
     prodotto = $(sci_name2).closest(".prodotto");
-  $("#sci_text").text(prodotto.find(".text").text());
+  $("#sci_text_en").text(prodotto.find(".text_en").text());
+  $("#sci_text_it").text(prodotto.find(".text_it").text());
   $("#sci_produttore").text(prodotto.find(".produttore").text());
   $("#sci_taglia").text(prodotto.find(".taglia").text());
   $("#sci_versione").text(prodotto.find(".versione").text());
