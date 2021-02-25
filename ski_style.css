@@ -446,7 +446,7 @@ pre {
   height: 200px;
 } */
 .img_rotate {
-  transform: translate(0, 40%);
+  /* transform: translate(0, 40%); */
 }
 
 #sci_img{
@@ -454,7 +454,7 @@ pre {
 }
 
 #sci_img_2 {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translate(50%, 0);
 }
 
 
@@ -638,6 +638,10 @@ pre {
 
 @media screen and (max-width: 414px) {
 
+  .arrow{
+    font-size: 23px;
+  }
+
   .landing_page{
     display: block;
   }
@@ -674,10 +678,10 @@ pre {
 
   .menu_button {
     height: 8vw;
-    position: absolute;
+    position: relative;
     transform: translate(0%, 50%);
-    right: 5vw;
-    top: 1vw;
+    right: 1vw;
+    top: -4.2vw;
     /* z-index: 1000; */
     transition: 0.2s;
     /* z-index: 1200; */

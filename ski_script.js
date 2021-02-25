@@ -33,6 +33,12 @@ if ($(window).width() >= 568) {
   $(".img_rotate").css("height", $("#sci_img_2").width()+30+"px");
   $("#sci_img_2").css("padding-top","0")
 }
+
+if ($(window).width() < 414) {
+  $(".name").text("Ski System Cortina")
+}else if ($(window).width() >= 414) {
+  $(".name").html("Ski System </br> Cortina");
+};
 }
 
 tariffe();
