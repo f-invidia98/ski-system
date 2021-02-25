@@ -418,6 +418,10 @@ pre {
   line-height: 18vw;
   text-transform: uppercase;
 }
+.option:active {
+color: white;
+    background: #004f9f;
+}
 
 .menu_title {
   width: 100vw;
