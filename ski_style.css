@@ -131,6 +131,7 @@ html, body, .main {
   height: 100%;
   cursor: url('assets/cursor.png') 1 1, auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html, body, .page2{
@@ -284,7 +285,7 @@ pre {
 
 .tariffe {
   text-align: center;
-  line-height: 90px;
+  line-height: 55px;
   text-transform: uppercase;
 }
 
@@ -464,7 +465,7 @@ color: white;
 }
 
 #sci_img_2 {
-  transform: rotate(90deg) translate(45%, 0);
+  transform: rotate(-90deg) translate(-45%, 0);
 }
 
 
@@ -836,7 +837,7 @@ color: white;
     border-top: none;
   }
 
-  
+
   .prodotto {
     text-align: center;
   }
