@@ -53,6 +53,9 @@ $(window).resize(tariffe)
 
 var language;
 var lang = 'it';
+
+
+
 function getLanguage() {
 (localStorage.getItem('language') == null) ? setLanguage('en') : false;
 $.ajax({
@@ -117,7 +120,12 @@ $('#lang > a').click(function(){
      });
 
 
-
+     if ($("#it_sel").hasClass("active-head")) {
+       lang = 'it';
+     } else if ($("#en_sel").hasClass("active-head")) {
+       lang = 'en';
+     }
+     setLanguage(lang);
 
 // $(".menu_button_2").click(function(){
 //   if ($(".menu").css("display") == 'block') {
@@ -464,9 +472,3 @@ $(".4").click(function(){
 //       $(".wrapper_sci").page().transition(page, trans);
 // });
 // });
-
-if ($("#it_sel").hasClass("active-head")) {
-  lang = 'it';
-} else if ($("#en_sel").hasClass("active-head")) {
-  lang = 'en';
-}
