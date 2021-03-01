@@ -1,8 +1,8 @@
-function loading() {
-  $("#nav-placeholder").load("nav.html");
-};
-
-loading();
+// function loading() {
+//   $("#nav-placeholder").load("nav.html");
+// };
+//
+// loading();
 
 
 // $(".title").css( 'cursor', 'url(assets/cursor.png), auto' );
