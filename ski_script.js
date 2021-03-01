@@ -116,16 +116,26 @@ $('#lang > a').click(function(){
        $(".text_en").css("display", "block");
        $(".text_it").css("display", "none");
      }
-     $('#lab_text').text(language.laboratoriotext);
+     $('#lab_text').text(language.text_lab);
+     $('#noleggio_text').text(language.noleggio_text);
+     $('#tutti_text').text(language.tutti_text);
+     $('.noleggio_titolo').text(language.noleggio_titolo);
+     $('#t_noleggio').text(language.t_noleggio);
+     $('#t_contatti').text(language.t_contatti);
+     $('#t_dolomiti').text(language.t_dolomiti);
+     $('.text_paolo').text(language.text_paolo);
+     $('#text_walter').text(language.text_walter);
+     $('#text_dolomiti').text(language.text_dolomiti);
+     $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
      });
 
 
-     if ($("#it_sel").hasClass("active-head")) {
-       lang = 'it';
-     } else if ($("#en_sel").hasClass("active-head")) {
-       lang = 'en';
-     }
-     setLanguage(lang);
+     // if ($("#it_sel").hasClass("active-head")) {
+     //   setLanguage('it');
+     // } else if ($("#en_sel").hasClass("active-head")) {
+     //   setLanguage('en');
+     // }
+
 
 // $(".menu_button_2").click(function(){
 //   if ($(".menu").css("display") == 'block') {
