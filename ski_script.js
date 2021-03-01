@@ -89,10 +89,10 @@ $('#lang > a').click(function(){
   $('#lab_text').text(language.text_lab);
   $('#noleggio_text').text(language.noleggio_text);
   $('#tutti_text').text(language.tutti_text);
-  $('.noleggio_titolo').text(language.noleggio_titolo);
-  $('#t_noleggio').text(language.t_noleggio);
-  $('#t_contatti').text(language.t_contatti);
-  $('#t_dolomiti').text(language.t_dolomiti);
+
+  $('.t_noleggio').text(language.t_noleggio);
+  $('.t_contatti').text(language.t_contatti);
+  $('.t_dolomiti').text(language.t_dolomiti);
   $('.text_paolo').text(language.text_paolo);
   $('#text_walter').text(language.text_walter);
   $('#text_dolomiti').text(language.text_dolomiti);
@@ -120,9 +120,9 @@ $('#lang > a').click(function(){
      $('#noleggio_text').text(language.noleggio_text);
      $('#tutti_text').text(language.tutti_text);
      $('.noleggio_titolo').text(language.noleggio_titolo);
-     $('#t_noleggio').text(language.t_noleggio);
-     $('#t_contatti').text(language.t_contatti);
-     $('#t_dolomiti').text(language.t_dolomiti);
+     $('.t_noleggio').text(language.t_noleggio);
+     $('.t_contatti').text(language.t_contatti);
+     $('.t_dolomiti').text(language.t_dolomiti);
      $('.text_paolo').text(language.text_paolo);
      $('#text_walter').text(language.text_walter);
      $('#text_dolomiti').text(language.text_dolomiti);
