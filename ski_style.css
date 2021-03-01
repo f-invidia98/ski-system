@@ -594,6 +594,11 @@ color: white;
 }
 
 @media screen and (min-width: 0px) and (max-width: 568px) {
+
+  .border_top_noleggio {
+    border-top: 3px solid #004f9f;
+  }
+
   .info_text_variant {
     font-size: 15px;
   }
@@ -647,6 +652,8 @@ color: white;
 }
 
 @media screen and (max-width: 414px) {
+
+
 
   .img_home{
     width: 100%;
@@ -730,6 +737,8 @@ color: white;
 }
 
 @media screen and (min-width: 414px) {
+
+
 
   .img_home{
     width: 100%;
@@ -822,6 +831,12 @@ color: white;
 }
 
 @media screen and (min-width: 568px) {
+
+  .border_top_noleggio {
+    border-top: none;
+  }
+
+  
   .prodotto {
     text-align: center;
   }
