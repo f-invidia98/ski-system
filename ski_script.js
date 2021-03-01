@@ -464,3 +464,9 @@ $(".4").click(function(){
 //       $(".wrapper_sci").page().transition(page, trans);
 // });
 // });
+
+if ($("#it_sel").hasClass("active-head")) {
+  lang = 'it';
+} else if ($("#en_sel").hasClass("active-head")) {
+  lang = 'en';
+}
