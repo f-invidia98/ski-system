@@ -1,8 +1,8 @@
-// function loading() {
-//   $("#nav-placeholder").load("nav.html");
-// };
-//
-// loading();
+function loading() {
+  $("#nav-placeholder").load("nav.html");
+};
+
+loading();
 
 
 // $(".title").css( 'cursor', 'url(assets/cursor.png), auto' );
@@ -506,54 +506,51 @@ $(".4").click(function(){
 
 
 
-$('#noleggio').click(function(){
-  $('.menu_tend').toggleClass("height_menu")
-})
-
-
-$('#sci_link-2').click(function(){
-  window.location.href = "noleggio.html";
-})
-
-$('#prenota_link').click(function(){
-  window.location.href = "mailto:info@skisystemcortina.it";
-})
-
-$('#tariffe_link').click(function(){
-  window.location.href = "noleggio.html";
-})
-
-
+// $('#noleggio').click(function(){
+//   $('.menu_tend').toggleClass("height_menu")
+// })
+//
+//
+// $('#sci_link-2').click(function(){
+//   window.location.href = "noleggio.html";
+// })
+//
+// $('#prenota_link').click(function(){
+//   window.location.href = "mailto:info@skisystemcortina.it";
+// })
+//
+// $('#tariffe_link').click(function(){
+//   window.location.href = "noleggio.html";
+// })
+//
+//
+// // $(".button_menu").click(function(){
+// //   if ($(".menu_button_index").css("display")=="none") {
+// //       $(".menu_button_index").css("display", "block")
+// //   }
+// //
+// //
+// //     setTimeout(function(){
+// //       $(".button_menu").css("display", "none")
+// //         $("#menu").css("display", "none")
+// //         $(".menu_button").removeClass("rotate")
+// //     },10)
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+// //})
 // $(".button_menu").click(function(){
-//   if ($(".menu_button_index").css("display")=="none") {
-//       $(".menu_button_index").css("display", "block")
-//   }
+// if ($("#menu").css("display")=="none") {
+//     $("#menu").css("display", "block")
+//     $(".menu_button").addClass("rotate")
+// } else if ($("#menu").css("display")=="block") {
+//     $("#menu").css("display", "none")
+//     $(".menu_button").removeClass("rotate")
 //
+// }
 //
-//     setTimeout(function(){
-//       $(".button_menu").css("display", "none")
-//         $("#menu").css("display", "none")
-//         $(".menu_button").removeClass("rotate")
-//     },10)
-//
-//
-//
-//
-//
-//
-//
-//})
-$(".button_menu").click(function(){
-if ($("#menu").css("display")=="none") {
-    $("#menu").css("display", "block")
-    $(".menu_button").addClass("rotate")
-} else if ($("#menu").css("display")=="block") {
-    $("#menu").css("display", "none")
-    $(".menu_button").removeClass("rotate")
-
-}
-
-
-
-
-})
+// })
