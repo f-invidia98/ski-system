@@ -1,8 +1,8 @@
-// function loading() {
-//   $("#nav-placeholder").load("nav.html");
-// };
-//
-// loading();
+function loading() {
+  $("#nav-placeholder").load("nav.html");
+};
+
+loading();
 
 $('#noleggio').click(function(){
   $('.menu_tend').toggleClass("height_menu")
