@@ -507,7 +507,7 @@ jQuery(function($) {
         $(document).mousemove(function(){
              if($("#slideshow:hover").length != 0){
                if (currentMousePos.x > $(window).width()/2) {
-                   //cursor
+                   $('#slideshow').css('cursor', 'url("assets/arrow.png"), auto');
 
                    $(".image1").click(function(){
                      $(".lab_image").css("transform", "translate(-100vw, 0)")
@@ -527,7 +527,7 @@ jQuery(function($) {
 
               } else {
                 if (currentMousePos.x < $(window).width()/2) {
-                    //cursor
+                    $('#slideshow').css('cursor', 'url("assets/arrow_rev.png"), auto');
 
                     $(".image2").click(function(){
                       $(".lab_image").css("transform", "translate(0vw, 0)")
