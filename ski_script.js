@@ -495,6 +495,65 @@ $(".4").click(function(){
   $(".4").addClass("inverted")
 });
 
+jQuery(function($) {
+    var currentMousePos = { x: -1, y: -1 };
+    $(document).mousemove(function(event) {
+        currentMousePos.x = event.pageX;
+        currentMousePos.y = event.pageY;
+    });
+
+
+    $(document).ready(function(){
+        $(document).mousemove(function(){
+             if($("#slideshow:hover").length != 0){
+               if (currentMousePos.x > $(window).width()/2) {
+                   //cursor
+
+                   $(".image1").click(function(){
+                     $(".lab_image").css("transform", "translate(-100vw, 0)")
+                     $(".slide_control > a").removeClass("inverted")
+                     $(".2").addClass("inverted")
+                  });
+                  $(".image2").click(function(){
+                    $(".lab_image").css("transform", "translate(-200vw, 0)")
+                    $(".slide_control > a").removeClass("inverted")
+                    $(".3").addClass("inverted")
+                 });
+                 $(".image3").click(function(){
+                   $(".lab_image").css("transform", "translate(-300vw, 0)")
+                   $(".slide_control > a").removeClass("inverted")
+                   $(".4").addClass("inverted")
+                });
+
+              } else {
+                if (currentMousePos.x < $(window).width()/2) {
+                    //cursor
+
+                    $(".image2").click(function(){
+                      $(".lab_image").css("transform", "translate(0vw, 0)")
+                      $(".slide_control > a").removeClass("inverted")
+                      $(".1").addClass("inverted")
+                   });
+                   $(".image3").click(function(){
+                     $(".lab_image").css("transform", "translate(-100vw, 0)")
+                     $(".slide_control > a").removeClass("inverted")
+                     $(".2").addClass("inverted")
+                  });
+                  $(".image4").click(function(){
+                    $(".lab_image").css("transform", "translate(-200vw, 0)")
+                    $(".slide_control > a").removeClass("inverted")
+                    $(".3").addClass("inverted")
+                 });
+
+                }
+              }
+            }
+        });
+    });
+    // ELSEWHERE, your code that needs to know the mouse position without an event
+
+});
+
 
 //     $(document).ready(function () {
 // $(".wrapper_sci").page();

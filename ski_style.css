@@ -91,7 +91,7 @@ a {
   color: inherit;
   display: inline-block;
   line-height: 0;
-  cursor: url('assets/cursor.png'), auto;
+  cursor: url('assets/cursor.cur'), auto;
 }
 
 /* .prodotto a:hover{
@@ -121,7 +121,7 @@ button {
 
 html, body, .main {
   height: 100%;
-  cursor: url('assets/cursor.png') 1 1, auto;
+  cursor: url('assets/cursor.cur') 1 1, auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -208,6 +208,11 @@ pre {
 }
 
 .name {
+  width: 100%;
+  text-align: center;
+}
+
+.name2 {
   width: 100%;
   text-align: center;
 }
