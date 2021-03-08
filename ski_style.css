@@ -704,6 +704,11 @@ pre {
     line-height: 18vw;
   }
 
+  .title2 {
+    height: 18vw;
+    line-height: 18vw;
+  }
+
   .head-size {
     font-size: 12vw;
   }
@@ -1244,6 +1249,11 @@ pre {
     font-family: SuisseIntl-Light;
   } */
   .title {
+    height: 18vw;
+    line-height: 18vw;
+  }
+
+  .title2 {
     height: 18vw;
     line-height: 18vw;
   }
