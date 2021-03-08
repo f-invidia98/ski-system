@@ -600,6 +600,7 @@ pre {
 
   }
 
+
   #prenota:hover{
     background-color: white;
     color: #004f9f;
@@ -632,7 +633,7 @@ pre {
   .link_prodotto div {
     display: inline-block;
     text-align: center;
-    width: 49%;
+    width: 50%;
     border-bottom: 0;
   }
 
@@ -698,6 +699,10 @@ pre {
   }
 
   .name {
+    text-align: left;
+  }
+
+  .name2 {
     text-align: left;
   }
 
@@ -856,6 +861,13 @@ pre {
 @media screen and (min-width: 568px) {
 
   #tariffe:hover{
+
+    background-color: #004f9f;
+    color: white;
+
+  }
+
+  .tariffe_nol:hover{
 
     background-color: #004f9f;
     color: white;
@@ -1171,7 +1183,7 @@ pre {
   .link_prodotto div {
     display: inline-block;
     text-align: center;
-    width: 49%;
+    width: 50%;
     border-bottom: 0;
   }
 

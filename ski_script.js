@@ -525,9 +525,19 @@ jQuery(function($) {
                    $(".4").addClass("inverted")
                 });
 
+                $(".image4").click(function(){
+                  $(".lab_image").css("transform", "translate(-300vw, 0)")
+                  $(".slide_control > a").removeClass("inverted")
+                  $(".4").addClass("inverted")
+               });
+
               } else {
                 if (currentMousePos.x < $(window).width()/2) {
                     $('#slideshow').css('cursor', 'url("assets/arrow_rev.png"), auto');
+
+                    $(".image1").click(function(){
+                      $(".lab_image").css("transform", "translate(0vw, 0)")
+                   });
 
                     $(".image2").click(function(){
                       $(".lab_image").css("transform", "translate(0vw, 0)")
