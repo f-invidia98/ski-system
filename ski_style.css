@@ -10,6 +10,12 @@
   font-weight: 200;
 }
 
+@font-face {
+  font-family: SuisseIntl-SemiBoldItalic;
+  src: url(assets/SuisseIntl-SemiBoldItalic.otf);
+  font-weight: 600;
+}
+
 ::selection {
   background-color: rgba(0, 79, 159, 0.90);
   -webkit-text-fill-color: white;
@@ -26,46 +32,37 @@
   background-color: #004f9f;
 }
 
-.arrow_img{
+.arrow_img {
   position: absolute;
   z-index: 1000;
   width: 50%;
-padding-left: 3%;
-color: white;
+  padding-left: 3%;
+  color: white;
 }
 
+.m-scene .scene_element {
+  animation: 6s;
+  animation-fill-mode: both;
+}
 
-  .m-scene .scene_element {
-    animation: 6s;
-    animation-fill-mode: both;
-  }
+.m-scene .scene_element--goup {
+  animation-name: goUp;
+}
 
-  .m-scene .scene_element--goup {
-    animation-name: goUp;
-  }
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
 
-  .m-scene .scene_element--fadein {
-    animation-name: fadeIn;
-  }
-
-  .m-scene.is-exiting .schermata {
-    animation-direction: alternate-reverse;
-  }
-
-
-
-
-
-
+.m-scene.is-exiting .schermata {
+  animation-direction: alternate-reverse;
+}
 
 @keyframes goUp {
   66% {
-
     transform: none;
   }
 
   100% {
-
     transform: translate(0, -100vh);
     /* transform: none; */
   }
@@ -74,12 +71,10 @@ color: white;
 @keyframes fadeIn {
   0% {
     opacity: 0;
-
   }
 
   100% {
     opacity: 1;
-
   }
 }
 
@@ -88,7 +83,6 @@ color: white;
   box-sizing: border-box;
   white-space: normal;
   webkit-print-color-adjust: exact;
-
   /* border: 1px solid black; */
 }
 
@@ -98,7 +92,6 @@ a {
   display: inline-block;
   line-height: 0;
   cursor: url('assets/cursor.png'), auto;
-
 }
 
 /* .prodotto a:hover{
@@ -106,7 +99,6 @@ a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #004f9f;
 } */
-
 a:hover {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
@@ -134,7 +126,7 @@ html, body, .main {
   scroll-behavior: smooth;
 }
 
-html, body, .page2{
+html, body, .page2 {
   scroll-behavior: smooth;
 }
 
@@ -243,7 +235,7 @@ pre {
   object-fit: cover; */
 }
 
-.lab_image{
+.lab_image {
   width: 100vw;
   position: relative;
   white-space: nowrap;
@@ -254,7 +246,6 @@ pre {
   display: inline;
   width: 100vw;
 }
-
 
 .page {
   height: 100%;
@@ -367,7 +358,7 @@ pre {
   margin-right: -12px;
 }
 
-  .padding_TB {
+.padding_TB {
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -394,17 +385,17 @@ pre {
   display: none;
 }
 
-.menu_tend{
+.menu_tend {
   height: 0;
   overflow: hidden;
   transition: 0.2s;
 }
 
-.height_menu{
+.height_menu {
   height: 54vw;
 }
 
-.inverted{
+.inverted {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #004f9f;
@@ -425,9 +416,10 @@ pre {
   line-height: 18vw;
   text-transform: uppercase;
 }
+
 .option:active {
-color: white;
-    background: #004f9f;
+  color: white;
+  background: #004f9f;
 }
 
 .menu_title {
@@ -460,7 +452,7 @@ color: white;
   /* transform: translate(0, 40%); */
 }
 
-#sci_img{
+#sci_img {
   padding-top: 70px;
 }
 
@@ -468,8 +460,7 @@ color: white;
   transform: rotate(-90deg) translate(-45%, 0);
 }
 
-
-.dolomiti_imglink > div{
+.dolomiti_imglink>div {
   display: inline-block;
   /* width: 50%; */
   vertical-align: top;
@@ -596,6 +587,27 @@ color: white;
 
 @media screen and (min-width: 0px) and (max-width: 568px) {
 
+
+  #tariffe:hover{
+
+    background-color: white;
+    color: #004f9f;
+
+  }
+
+  #prenota:hover{
+    background-color: white;
+    color: #004f9f;
+  }
+
+  #prenota:hover a{
+    -webkit-text-fill-color:  #004f9f;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #004f9f;
+  }
+
+
+
   .border_top_noleggio {
     border-top: 3px solid #004f9f;
   }
@@ -653,23 +665,24 @@ color: white;
 }
 
 @media screen and (max-width: 414px) {
-
-
-
-  .img_home{
+  .img_home {
     width: 100%;
-    height: calc(100vw - 25vw);
+    height: calc(100vh - 100px - 18vw);
     object-fit: cover;
   }
 
-  .arrow{
+  .padding_TB_ec{
+    padding-top:12px;
+    padding-bottom:12px;
+  }
+
+  .arrow {
     font-size: 23px;
   }
 
-  .landing_page{
+  .landing_page {
     display: block;
   }
-
 
   .header {
     display: none;
@@ -711,15 +724,13 @@ color: white;
     /* z-index: 1200; */
   }
 
-  .menu_button_index{
+  .menu_button_index {
     z-index: 1000;
   }
 
-  .button_menu{
+  .button_menu {}
 
-  }
-
-  .rotate{
+  .rotate {
     transform: translate(2vw, 50%) rotate(270deg);
   }
 
@@ -738,14 +749,15 @@ color: white;
 }
 
 @media screen and (min-width: 414px) {
-
-
-
-  .img_home{
+  .padding_TB_ec{
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .img_home {
     width: 100%;
   }
 
-  .landing_page{
+  .landing_page {
     display: none;
   }
 
@@ -833,10 +845,28 @@ color: white;
 
 @media screen and (min-width: 568px) {
 
+  #tariffe:hover{
+
+    background-color: #004f9f;
+    color: white;
+
+  }
+
+  #prenota:hover{
+    background-color: #004f9f;
+    color: white;
+  }
+
+  #prenota:hover a{
+    -webkit-text-fill-color:  white;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+  }
+
+
   .border_top_noleggio {
     border-top: none;
   }
-
 
   .prodotto {
     text-align: center;
@@ -929,12 +959,9 @@ color: white;
     margin-right: auto;
   }
 
-
-
   .padding_special {
     padding-top: 36px;
     padding-bottom: 36px;
-
   }
 
   .cont_text {
@@ -1070,6 +1097,7 @@ color: white;
     padding-left: 92px;
     padding-right: 92px;
   }
+
   .padding_LR_n {
     margin-left: -92px;
     margin-right: -92px;
@@ -1191,19 +1219,14 @@ color: white;
   }
 }
 
-
-
-
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
   #lang {
     display: none;
   }
 
-  .landing_page{
+  .landing_page {
     display: block;
   }
-
 
   .header {
     display: none;
@@ -1225,7 +1248,7 @@ color: white;
     line-height: 18vw;
   }
 
-  .nostroke{
+  .nostroke {
     -webkit-text-fill-color: #004f9f;
     -webkit-text-stroke-width: 0px;
   }
@@ -1256,5 +1279,4 @@ color: white;
   .image img {
     padding-top: 12px;
   }
-
 }

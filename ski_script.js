@@ -5,6 +5,11 @@ function loading() {
 loading();
 
 
+
+$('#prenota').click(function(){
+  window.location.href = "mailto:info@skisystemcortina.it";
+})
+
 // $(".title").css( 'cursor', 'url(assets/cursor.png), auto' );
 
 // var posy;
@@ -20,8 +25,10 @@ loading();
 function tariffe(){
 if ($(window).width() < 990) {
     $("#tariffe").text("TARIFFE")
+      $("th").css("width", "30vw")
 } else if ($(window).width() > 990) {
     $("#tariffe").text("TARIFFE 2020/2021 ↧")
+      $("th").css("width", "20%")
 }
 
 if ($(window).width() >= 568) {
@@ -40,6 +47,19 @@ if ($(window).width() < 414) {
 }else if ($(window).width() >= 414) {
   $(".name").html("Ski System </br> Cortina");
 };
+
+if ($(window).width() < 990 && $(window).width() > 568) {
+  $("#tariffe").css("height", $(".sci_info").height()/2)
+  $("#tariffe").css("line-height", $(".sci_info").height()/2 + "px")
+  $(".t_pre").css("height", $(".sci_info").height()/2)
+  $(".t_pre").css("line-height", $(".sci_info").height()/2 + "px")
+}else {
+  $("#tariffe").css("height", "inherit")
+  $("#tariffe").css("line-height", "inherit")
+  $(".t_pre").css("height", "inherit")
+  $(".t_pre").css("line-height","inherit")
+};
+
 }
 
 tariffe();
