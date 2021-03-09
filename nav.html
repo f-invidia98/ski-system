@@ -39,7 +39,7 @@
           <a href="contatti.html"><span class="t_contatti">contatti</span></a>
         </div>
         <div id="lang2" class="option border_bottom padding_LR lang">
-          <a class="en_b" href="#" onclick="setLanguage('en')">en</a>/<a class="it_b" href="#" onclick="setLanguage('it')" class="active-head">it</a>
+          <a class="en_b" href="#" onclick="setLanguage2('en')">en</a>/<a class="it_b" href="#" onclick="setLanguage2('it')" class="active-head">it</a>
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@
 
       }
 
-      function setLanguage(lang) {
+      function setLanguage2(lang) {
         localStorage.setItem('language', lang);
         if (localStorage.getItem('language') == "it") {
           $('.en_b').removeClass("active-head")
