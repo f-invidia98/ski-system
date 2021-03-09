@@ -164,7 +164,7 @@ $('#lang > a').click(function(){
      $('#text_walter').text(language.text_walter);
      $('#text_dolomiti').text(language.text_dolomiti);
      $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
-
+     tariffe();
      });
 
 tariffe();
