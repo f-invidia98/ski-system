@@ -1,186 +1,200 @@
+<!DOCTYPE html>
+<html dir="ltr">
 
-<div id="menu" class="menu">
-  <div class="menu_title title short_title padding_LR font title-size text_center border_bottom">
-    <div>Menu</div>
-    <div class="botton"><img src="assets/menu.png" class="menu_button button_menu"></div>
-  </div>
+  <body>
 
-  <div class="menu_options title-size">
-    <div class="option border_bottom padding_LR">
-      <a href="laboratorio.html">Laboratorio</a>
+
+
+
+
+    <div id="menu" class="menu">
+      <div class="menu_title title short_title padding_LR font title-size text_center border_bottom">
+        <div>Menu</div>
+        <div class="botton"><img src="assets/menu.png" class="menu_button button_menu"></div>
+      </div>
+
+      <div class="menu_options title-size">
+        <div class="option border_bottom padding_LR">
+          <a href="laboratorio.html">Laboratorio</a>
+        </div>
+        <div id="noleggio" class="option border_bottom padding_LR">
+          <a><span class="t_noleggio">noleggio</span></a>
+        </div>
+
+        <div class="menu_tend inverted">
+          <div id="sci_link-2" class="option border_bottom padding_LR t_sci">
+            Tutti gli sci
+          </div>
+          <div id="tariffe_link" class="option border_bottom padding_LR t_tar">
+            Tariffe
+          </div>
+        </div>
+
+
+
+        <div class="option border_bottom padding_LR">
+          <a href="dolomiti.html"><span class="t_dolomiti">dolomiti</span></a>
+        </div>
+        <div class="option border_bottom padding_LR">
+          <a href="contatti.html"><span class="t_contatti">contatti</span></a>
+        </div>
+        <div id="lang2" class="option border_bottom padding_LR lang">
+          <a class="en_b" href="#" onclick="setLanguage('en')">en</a>/<a class="it_b" href="#" onclick="setLanguage('it')" class="active-head">it</a>
+        </div>
+      </div>
     </div>
-    <div id="noleggio" class="option border_bottom padding_LR">
-      <a><span class="t_noleggio">noleggio</span></a>
-    </div>
 
-<div class="menu_tend inverted">
-  <div id="sci_link-2" class="option border_bottom padding_LR t_sci">
-    Tutti gli sci
-  </div>
-  <div id="tariffe_link" class="option border_bottom padding_LR t_tar">
-    Tariffe
-  </div>
-</div>
+    <!-- <script src="lang.js" type="text/javascript"></script> -->
+
+    <script type="text/javascript">
+      // $(".menu_button_2").click(function(){
+      //   $("#menu").css("display", "none")
+      // })
 
 
-
-    <div class="option border_bottom padding_LR">
-      <a href="dolomiti.html"><span class="t_dolomiti">dolomiti</span></a>
-    </div>
-    <div class="option border_bottom padding_LR">
-      <a href="contatti.html"><span class="t_contatti">contatti</span></a>
-    </div>
-    <div id="lang2" class="option border_bottom padding_LR lang">
-      <a class="en_b" href="#" onclick="setLanguage('en')">en</a>/<a class="it_b"  href="#" onclick="setLanguage('it')" class="active-head">it</a>
-    </div>
-  </div>
-</div>
-
-<script src="lang.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-
-// $(".menu_button_2").click(function(){
-//   $("#menu").css("display", "none")
-// })
+      $('#noleggio').click(function() {
+        $('.menu_tend').toggleClass("height_menu")
+      })
 
 
-$('#noleggio').click(function(){
-  $('.menu_tend').toggleClass("height_menu")
-})
+      $('#sci_link-2').click(function() {
+        window.location.href = "noleggio.html";
+      })
+
+      $('#prenota_link').click(function() {
+        window.location.href = "mailto:info@skisystemcortina.it";
+      })
+
+      $('#tariffe_link').click(function() {
+        window.location.href = "noleggio.html";
+      })
 
 
-$('#sci_link-2').click(function(){
-  window.location.href = "noleggio.html";
-})
+      // $(".button_menu").click(function(){
+      //   if ($(".menu_button_index").css("display")=="none") {
+      //       $(".menu_button_index").css("display", "block")
+      //   }
+      //
+      //
+      //     setTimeout(function(){
+      //       $(".button_menu").css("display", "none")
+      //         $("#menu").css("display", "none")
+      //         $(".menu_button").removeClass("rotate")
+      //     },10)
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //})
+      $(".button_menu").click(function() {
+        if ($("#menu").css("display") == "none") {
+          $("#menu").css("display", "block")
+          $(".menu_button").addClass("rotate")
+        } else if ($("#menu").css("display") == "block") {
+          $("#menu").css("display", "none")
+          $(".menu_button").removeClass("rotate")
 
-$('#prenota_link').click(function(){
-  window.location.href = "mailto:info@skisystemcortina.it";
-})
-
-$('#tariffe_link').click(function(){
-  window.location.href = "noleggio.html";
-})
-
-
-// $(".button_menu").click(function(){
-//   if ($(".menu_button_index").css("display")=="none") {
-//       $(".menu_button_index").css("display", "block")
-//   }
-//
-//
-//     setTimeout(function(){
-//       $(".button_menu").css("display", "none")
-//         $("#menu").css("display", "none")
-//         $(".menu_button").removeClass("rotate")
-//     },10)
-//
-//
-//
-//
-//
-//
-//
-//})
-$(".button_menu").click(function(){
-if ($("#menu").css("display")=="none") {
-    $("#menu").css("display", "block")
-    $(".menu_button").addClass("rotate")
-} else if ($("#menu").css("display")=="block") {
-    $("#menu").css("display", "none")
-    $(".menu_button").removeClass("rotate")
-
-}
+        }
 
 
 
 
-})
+      })
 
 
 
-var language;
-var lang = 'it';
+      var language;
+      var lang = 'it';
 
 
 
-function getLanguage() {
-(localStorage.getItem('language') == null) ? setLanguage('en') : false;
-$.ajax({
-url:  'language/' +  localStorage.getItem('language') + '.json',
-dataType: 'json', async: false, dataType: 'json',
-success: function (lang) { language = lang } });
+      function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('en'): false;
+        $.ajax({
+          url: 'language/' + localStorage.getItem('language') + '.json',
+          dataType: 'json',
+          async: false,
+          dataType: 'json',
+          success: function(lang) {
+            language = lang
+          }
+        });
 
-}
+      }
 
-function setLanguage(lang) {
-localStorage.setItem('language', lang);
-if (localStorage.getItem('language') == "it") {
-  $('.en_b').removeClass("active-head")
-  $('.it_b').addClass("active-head")
-  $(".text_it").css("display", "block");
-  $(".text_en").css("display", "none");
-} else if (localStorage.getItem('language') == "en") {
-  $('.it_b').removeClass("active-head")
-  $('.en_b').addClass("active-head")
-  $(".text_en").css("display", "block");
-  $(".text_it").css("display", "none");
+      function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+        if (localStorage.getItem('language') == "it") {
+          $('.en_b').removeClass("active-head")
+          $('.it_b').addClass("active-head")
+          $(".text_it").css("display", "block");
+          $(".text_en").css("display", "none");
+        } else if (localStorage.getItem('language') == "en") {
+          $('.it_b').removeClass("active-head")
+          $('.en_b').addClass("active-head")
+          $(".text_en").css("display", "block");
+          $(".text_it").css("display", "none");
 
-}
-}
-
-
-
-$('#lang2 > a').click(function(){
-  getLanguage();
-
-  $('#lab_text').text(language.text_lab);
-  $('#noleggio_text').text(language.noleggio_text);
-  $('#tutti_text').text(language.tutti_text);
-  $('.t_noleggio').text(language.t_noleggio);
-  $('.t_contatti').text(language.t_contatti);
-  $('.t_dolomiti').text(language.t_dolomiti);
-  $('.t_sci').text(language.t_sci);
-  $('.t_tar').text(language.t_tar);
-  $('.t_pre').text(language.t_pre);
-  $('.text_paolo').text(language.text_paolo);
-  $('#text_walter').text(language.text_walter);
-  $('#text_dolomiti').text(language.text_dolomiti);
-  $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
-
-
-});
+        }
+      }
 
 
 
-     $(document).ready(function(){
-     getLanguage();
-     if (localStorage.getItem('language') == "it") {
-       $('.en_b').removeClass("active-head")
-       $('.it_b').addClass("active-head")
-       $(".text_it").css("display", "block");
-       $(".text_en").css("display", "none");
-     } else if (localStorage.getItem('language') == "en") {
-       $('.it_b').removeClass("active-head")
-       $('.en_b').addClass("active-head")
-       $(".text_en").css("display", "block");
-       $(".text_it").css("display", "none");
-     }
-     $('#lab_text').text(language.text_lab);
-     $('#noleggio_text').text(language.noleggio_text);
-     $('#tutti_text').text(language.tutti_text);
-     $('.t_noleggio').text(language.t_noleggio);
-     $('.t_contatti').text(language.t_contatti);
-     $('.t_dolomiti').text(language.t_dolomiti);
-     $('.t_sci').text(language.t_sci);
-     $('.t_tar').text(language.t_tar);
-     $('.t_pre').text(language.t_pre);
-     $('.text_paolo').text(language.text_paolo);
-     $('#text_walter').text(language.text_walter);
-     $('#text_dolomiti').text(language.text_dolomiti);
-     $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
+      $('#lang2 > a').click(function() {
+        getLanguage();
 
-     });
+        $('#lab_text').text(language.text_lab);
+        $('#noleggio_text').text(language.noleggio_text);
+        $('#tutti_text').text(language.tutti_text);
+        $('.t_noleggio').text(language.t_noleggio);
+        $('.t_contatti').text(language.t_contatti);
+        $('.t_dolomiti').text(language.t_dolomiti);
+        $('.t_sci').text(language.t_sci);
+        $('.t_tar').text(language.t_tar);
+        $('.t_pre').text(language.t_pre);
+        $('.text_paolo').text(language.text_paolo);
+        $('#text_walter').text(language.text_walter);
+        $('#text_dolomiti').text(language.text_dolomiti);
+        $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
 
 
-</script>
+      });
+
+
+
+      $(document).ready(function() {
+        getLanguage();
+        if (localStorage.getItem('language') == "it") {
+          $('.en_b').removeClass("active-head")
+          $('.it_b').addClass("active-head")
+          $(".text_it").css("display", "block");
+          $(".text_en").css("display", "none");
+        } else if (localStorage.getItem('language') == "en") {
+          $('.it_b').removeClass("active-head")
+          $('.en_b').addClass("active-head")
+          $(".text_en").css("display", "block");
+          $(".text_it").css("display", "none");
+        }
+        $('#lab_text').text(language.text_lab);
+        $('#noleggio_text').text(language.noleggio_text);
+        $('#tutti_text').text(language.tutti_text);
+        $('.t_noleggio').text(language.t_noleggio);
+        $('.t_contatti').text(language.t_contatti);
+        $('.t_dolomiti').text(language.t_dolomiti);
+        $('.t_sci').text(language.t_sci);
+        $('.t_tar').text(language.t_tar);
+        $('.t_pre').text(language.t_pre);
+        $('.text_paolo').text(language.text_paolo);
+        $('#text_walter').text(language.text_walter);
+        $('#text_dolomiti').text(language.text_dolomiti);
+        $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
+
+      });
+    </script>
+
+  </body>
+
+</html>
