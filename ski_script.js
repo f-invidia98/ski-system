@@ -24,10 +24,10 @@ $('#prenota').click(function(){
 
 function tariffe(){
 if ($(window).width() < 990) {
-    $("#tariffe").text("TARIFFE")
+    $("#tariffe").html('<span class="text_it">TARIFFE</span><span class="text_en">RATES</span>')
       $("th").css("width", "30vw")
 } else if ($(window).width() > 990) {
-    $("#tariffe").html("TARIFFE 2020/2021 ↧")
+    $("#tariffe").html('<span class="text_it">TARIFFE 2020/2021 ↧</span><span class="text_en">RATES 2020/2021 ↧</span>')
       $("th").css("width", "20%")
 }
 
@@ -62,7 +62,7 @@ if ($(window).width() < 990 && $(window).width() > 568) {
 
 }
 
-tariffe();
+
 
 
 
@@ -167,7 +167,7 @@ $('#lang > a').click(function(){
 
      });
 
-
+tariffe();
      // if ($("#it_sel").hasClass("active-head")) {
      //   setLanguage('it');
      // } else if ($("#en_sel").hasClass("active-head")) {
