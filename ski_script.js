@@ -4,10 +4,10 @@ function loading() {
 
 loading();
 
-
+$('.footer').css('cursor', 'url("assets/cursor.png"), auto');
 
 $('#prenota').click(function(){
-  window.location.href = "mailto:info@skisystemcortina.it";
+  window.location.href = "mailto:info@skisystemcortina.it?subject=Prenotazione sci&body=Ciao, completando le informazioni che trovi di seguito sarà possibile confermare la tua prenotazione.%0A%0AUna volta inseriti tutti i dati necessari ricordati di inviare questa mail. Riceverai una conferma il prima possibile.%0A%0A• Cognome: %0A%0A• Nome:%0A%0A• Altezza sci:%0A%0A• GG/MM del ritiro noleggio: %0A%0A• Durata noleggio:%0A%0A%0A%0A%0ATi aspettiamo da Ski System Cortina!%0A%0AA presto,%0APaolo e Walter%0A%0A%0A%0ASki System Cortina%0AVia Faloria, 23%0A32043 – Cortina d'Ampezzo%0AT: 	+39 0436 4283%0AE: 	info@skisystem.it%0AW:  	skisystem.it";
 })
 
 // $(".title").css( 'cursor', 'url(assets/cursor.png), auto' );

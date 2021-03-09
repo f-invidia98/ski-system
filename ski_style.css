@@ -84,6 +84,7 @@
   white-space: normal;
   webkit-print-color-adjust: exact;
   /* border: 1px solid black; */
+
 }
 
 a {
@@ -119,6 +120,10 @@ button {
   hyphens: auto;
 }
 
+.wrap {
+  cursor: url('assets/cursor.png'), auto;
+}
+
 html, body, .main {
   height: 100%;
   cursor: url('assets/cursor.png') 1 1, auto;
@@ -128,6 +133,7 @@ html, body, .main {
 
 html, body, .page2 {
   scroll-behavior: smooth;
+
 }
 
 table {
@@ -172,6 +178,10 @@ pre {
 
 .text_center {
   text-align: center;
+}
+
+.lang > a {
+  cursor: url('assets/cursor.png'), auto;
 }
 
 .active-head {
@@ -397,7 +407,7 @@ pre {
 }
 
 .height_menu {
-  height: 54vw;
+  height: 36vw;
 }
 
 .inverted {
@@ -591,6 +601,10 @@ pre {
 }
 
 @media screen and (min-width: 0px) and (max-width: 568px) {
+
+  .disap{
+    display: none;
+  }
 
 
   #tariffe:hover{
