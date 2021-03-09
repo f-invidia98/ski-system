@@ -24,10 +24,12 @@ $('#prenota').click(function(){
 
 function tariffe(){
 if ($(window).width() < 990) {
-    $("#tariffe").html('<span class="text_it">TARIFFE</span><span class="text_en">RATES</span>')
+    $(".tariffe_en").html('RATES')
+    $(".tariffe_it").html('TARIFFE')
       $("th").css("width", "30vw")
 } else if ($(window).width() > 990) {
-    $("#tariffe").html('<span class="text_it">TARIFFE 2020/2021 ↧</span><span class="text_en">RATES 2020/2021 ↧</span>')
+  $(".tariffe_en").html('RATES 2020/2021 ↧')
+  $(".tariffe_it").html('TARIFFE 2020/2021 ↧')
       $("th").css("width", "20%")
 }
 
@@ -164,7 +166,7 @@ $('#lang > a').click(function(){
      $('#text_walter').text(language.text_walter);
      $('#text_dolomiti').text(language.text_dolomiti);
      $('#text_dolomiti_cred').text(language.text_dolomiti_cred);
-     tariffe();
+
      });
 
 tariffe();
