@@ -39,7 +39,7 @@
           <a href="contatti.html"><span class="t_contatti">contatti</span></a>
         </div>
         <div id="lang2" class="option border_bottom padding_LR lang">
-          <a class="en_b" href="#" onclick="setLanguage2('en')">en</a>/<a class="it_b" href="#" onclick="setLanguage2('it')" class="active-head">it</a>
+          <a class="en_b" href="#" onclick="setLanguage('en')">en</a>/<a class="it_b" href="#" onclick="setLanguage('it')" class="active-head">it</a>
         </div>
       </div>
     </div>
@@ -111,8 +111,8 @@
 
 
 
-      function getLanguage2() {
-        (localStorage.getItem('language') == null) ? setLanguage2('en'): false;
+      function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('en'): false;
         $.ajax({
           url: 'language/' + localStorage.getItem('language') + '.json',
           dataType: 'json',
@@ -125,7 +125,7 @@
 
       }
 
-      function setLanguage2(lang) {
+      function setLanguage(lang) {
         localStorage.setItem('language', lang);
         if (localStorage.getItem('language') == "it") {
           $('.en_b').removeClass("active-head")
@@ -144,7 +144,7 @@
 
 
       $('#lang2 > a').click(function() {
-        getLanguage2();
+        getLanguage();
 
         $('#lab_text').text(language.text_lab);
         $('#noleggio_text').text(language.noleggio_text);
@@ -166,7 +166,7 @@
 
 
       $(document).ready(function() {
-        getLanguage2();
+        getLanguage();
         if (localStorage.getItem('language') == "it") {
           $('.en_b').removeClass("active-head")
           $('.it_b').addClass("active-head")
