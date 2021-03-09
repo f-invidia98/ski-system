@@ -111,8 +111,8 @@
 
 
 
-      function getLanguage() {
-        (localStorage.getItem('language') == null) ? setLanguage('en'): false;
+      function getLanguage2() {
+        (localStorage.getItem('language') == null) ? setLanguage2('en'): false;
         $.ajax({
           url: 'language/' + localStorage.getItem('language') + '.json',
           dataType: 'json',
@@ -144,7 +144,7 @@
 
 
       $('#lang2 > a').click(function() {
-        getLanguage();
+        getLanguage2();
 
         $('#lab_text').text(language.text_lab);
         $('#noleggio_text').text(language.noleggio_text);
@@ -166,7 +166,7 @@
 
 
       $(document).ready(function() {
-        getLanguage();
+        getLanguage2();
         if (localStorage.getItem('language') == "it") {
           $('.en_b').removeClass("active-head")
           $('.it_b').addClass("active-head")
