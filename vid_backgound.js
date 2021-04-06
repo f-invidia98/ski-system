@@ -31,7 +31,7 @@ vid.addEventListener("canplay", function() {
   //   vid.play();
   // }, 1000);
 });
-// vid.play();
+
 
 
 var wrapper = document.getElementById('wrapper');
@@ -92,9 +92,9 @@ window.onresize = function(event) {
 
 
 
-// $(document).ready(function() {
-//   setTimeout(function(){
-//     window.location.href = "home.html";
-//   },6500)
-//
-//   });
+$(document).ready(function() {
+  setTimeout(function(){
+    window.location.href = "home.html";
+  },6500)
+
+  });
