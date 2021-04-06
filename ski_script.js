@@ -46,8 +46,12 @@ if ($(window).width() >= 568) {
 
 if ($(window).width() < 414) {
   $(".name").text("Ski System Cortina")
+  $("#wrapper").css("display", "none")
+  $("#wrapper2").css("display", "flex")
 }else if ($(window).width() >= 414) {
   $(".name").html("Ski System </br> Cortina");
+  $("#wrapper").css("display", "flex")
+  $("#wrapper2").css("display", "none")
 };
 
 if ($(window).width() < 990 && $(window).width() > 568) {

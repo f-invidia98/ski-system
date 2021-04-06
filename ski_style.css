@@ -57,6 +57,21 @@
   animation-direction: alternate-reverse;
 }
 
+
+.m-scene .scene_element2 {
+  animation: 3s;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene_element2--goup {
+  animation-name: goUp;
+}
+
+.m-scene .scene_element2--fadein {
+  animation-name: fadeIn;
+}
+
+
 @keyframes goUp {
   66% {
     transform: none;

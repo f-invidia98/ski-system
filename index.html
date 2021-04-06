@@ -39,6 +39,21 @@
       background-color: #004f9f;
     }
 
+    #wrapper2 {
+      width: 100vw;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      background-color: #004f9f;
+    }
+
+
     video {
       width: 40vw;
       position: relative;
@@ -52,6 +67,14 @@
     canvas {
       position: relative;
     }
+
+
+    #logoimg {
+      width: 100vw;
+      position: absolute;
+
+    }
+
   </style>
 
 
@@ -61,6 +84,10 @@
     <div id="wrapper" class="schermata scene_element scene_element--goup">
       <canvas id="exampleCanvas"></canvas>
       <video muted playsinline id="exampleVideo" src="animazione_skisystem.mp4"></video>
+    </div>
+
+    <div id="wrapper2" class="schermata scene_element2 scene_element2--goup">
+      <img id="logoimg" src="assets/logo_img.png">
     </div>
 
   </div>
