@@ -86,9 +86,25 @@ window.onresize = function(event) {
 
 
 
-// $(document).ready(function() {
-//   setTimeout(function() {
-//     window.location.href = "home.html";
-//   }, 7000)
-//
-// });
+$(document).ready(function() {
+
+
+
+
+
+
+
+
+
+
+
+  if ($(window).width() < 414) {
+    setTimeout(function() {
+      window.location.href = "home.html";
+    }, 3000)
+  }else if ($(window).width() >= 414) {
+    setTimeout(function() {
+      window.location.href = "home.html";
+    }, 7000)
+  };
+});
