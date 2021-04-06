@@ -12,15 +12,15 @@ var vid = document.getElementById('exampleVideo');
 
 
 if (vid.readyState === 4) {
-  vid.play();
+  vid.addEventListener("canplay", function() {
+    setTimeout(function() {
+      vid.play();
+    }, 1000);
+  });
 }
 
 
-// vid.addEventListener("canplay", function() {
-//   setTimeout(function() {
-//     vid.play();
-//   }, 1000);
-// });
+
   // vid.play();
 
 
