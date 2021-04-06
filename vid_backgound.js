@@ -11,6 +11,10 @@ window.addEventListener('resize', () => {
 var vid = document.getElementById('exampleVideo');
 
 
+if (vid.readyState === 4) {
+    // it's loaded
+
+
 vid.addEventListener("canplay", function() {
   setTimeout(function() {
     vid.play();
@@ -94,3 +98,5 @@ vid.addEventListener("canplay", function() {
 	  },6500)
 
 	  });
+
+  }
