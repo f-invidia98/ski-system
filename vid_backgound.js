@@ -12,14 +12,15 @@ var vid = document.getElementById('exampleVideo');
 
 
 if (vid.readyState === 4) {
-    // it's loaded
+  vid.play();
+}
 
 
-vid.addEventListener("canplay", function() {
-  setTimeout(function() {
-    vid.play();
-  }, 1000);
-});
+// vid.addEventListener("canplay", function() {
+//   setTimeout(function() {
+//     vid.play();
+//   }, 1000);
+// });
   // vid.play();
 
 
@@ -98,5 +99,3 @@ vid.addEventListener("canplay", function() {
 	  },6500)
 
 	  });
-
-  }
