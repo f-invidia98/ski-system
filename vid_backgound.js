@@ -11,8 +11,12 @@ window.addEventListener('resize', () => {
 var vid = document.getElementById('exampleVideo');
 
 
-
-  vid.play();
+vid.addEventListener("canplay", function() {
+  setTimeout(function() {
+    vid.play();
+  }, 1000);
+});
+  // vid.play();
 
 
 	var wrapper = document.getElementById('wrapper');
@@ -43,7 +47,7 @@ var vid = document.getElementById('exampleVideo');
 		setTimeout(() => {
 			setVideoBgColor(vid, wrapper);
 
-		}, 300);
+		}, 1300);
 	};
 
 	function drawingLoop(){
@@ -87,6 +91,6 @@ var vid = document.getElementById('exampleVideo');
 	$(document).ready(function() {
 	  setTimeout(function(){
 	    window.location.href = "home.html";
-	  },7000)
+	  },6500)
 
 	  });

@@ -685,6 +685,11 @@ pre {
 }
 
 @media screen and (max-width: 414px) {
+
+  .prodotto-size {
+    font-size: 19px;
+  }
+
   .img_home {
     width: 100%;
     height: calc(100vh - 100px - 18vw);
